@@ -13,7 +13,6 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
     <style>
         .banner-image {
-
             background-image: url();
             background-size: cover;
         }
@@ -21,9 +20,9 @@
         .navbar-expand-lg {
             transition: all .5s;
         }
-        @media(min-width: 576px)
-        {
-            .dropdown:hover > .dropdown-menu{
+
+        @media(min-width: 576px) {
+            .dropdown:hover>.dropdown-menu {
                 display: block;
                 margin-top: 0;
                 -webkit-transition: all 0.3s;
@@ -34,9 +33,9 @@
             }
 
         }
-        @media (max-width:991px)
-        {
-            .sidebar{
+
+        @media (max-width:991px) {
+            .sidebar {
                 background-color: rgba(255, 255, 255, 0.15);
                 backdrop-filter: blur(10px);
             }
@@ -45,15 +44,16 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+    <nav class="navbar fixed-top navbar-expand-lg p-md-3">
         <div class="container">
-            <a href="" class="navbar-brand text-white fs-2" style="font-family: Georgia;" >DE-BA</a>
+            <a href="" class="navbar-brand text-white fs-2" style="font-family: Georgia;">DE-BA</a>
             <button type="button" class="navbar-toggler shadow-none border-0" data-bs-target="#offcanvasNavbar"
-                data-bs-toggle="offcanvas" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle Navbar">
-                <span class="navbar-toggler-icon text-white"></span>
+                data-bs-toggle="offcanvas" aria-controls="offcanvasNavbar" aria-expanded="false"
+                aria-label="Toggle Navbar">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item mx-2">
@@ -67,17 +67,18 @@
                         </li>
                         <li class="nav-item mx-2">
                             <div class="dropdown nav-link text-white active ">
-                                <a class="dropdown text-white text-decoration-none" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Dropdown link
+                                <a class="dropdown text-white text-decoration-none" href="#" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Dropdown link
                                 </a>
-                              
+
                                 <ul class="dropdown-menu ">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
                                 </ul>
-                              </div>
-                            
+                            </div>
+
                         </li>
                         <li class="nav-item mx-2">
                             <a href="#" class="nav-link text-white active">Register</a>
@@ -85,11 +86,12 @@
                     </ul>
                     <div class="d-flex justify-content-center align-items-center gap-3">
                         <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1 rounded-4">Login</a>
-                        <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1 bg-primary rounded-4" style="background-color: #f09417;">Register</a>
+                        <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1 bg-primary rounded-4"
+                            style="background-color: #f09417;">Register</a>
                     </div>
                 </div>
             </div>
-            
+
 
         </div>
     </nav>
@@ -97,17 +99,19 @@
     <div class="banner-image w-100 vh-100 d-lex justify-content align-items-center" id="carousel-slider">
         <div>
             <img class="d-block banner-image w-100 vh-100 d-lex justify-content align-items-center"
-                src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/dc-lovensky-437061.jpg" style="object-fit: cover;" alt="First slide">
+                src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/dc-lovensky-437061.jpg"
+                style="object-fit: cover;" alt="First slide">
         </div>
         <div>
-            <img class="d-block banner-image w-100 vh-100 d-lex justify-content align-items-center" style="object-fit: cover;"
+            <img class="d-block banner-image w-100 vh-100 d-lex justify-content align-items-center"
+                style="object-fit: cover;"
                 src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/timothy-paul-smith-405497.jpg"
                 alt="Third slide">
         </div>
         <div>
-            <img class="d-block banner-image w-100 vh-100 d-lex justify-content align-items-center" style="object-fit: cover;"
-                src="https://wiso.foxthemes.me/wp-content/uploads/2018/05/stock-photo-203371029.jpg"
-                alt="Third slide">
+            <img class="d-block banner-image w-100 vh-100 d-lex justify-content align-items-center"
+                style="object-fit: cover;"
+                src="https://wiso.foxthemes.me/wp-content/uploads/2018/05/stock-photo-203371029.jpg" alt="Third slide">
         </div>
     </div>
 
