@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -12,8 +13,20 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
     <style>
+        body {
+            font-family: 'Playfair Display';
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Open Sans", sans-serif;
+        }
+
         .banner-image {
-            background-image: url();
             background-size: cover;
         }
 
@@ -21,12 +34,117 @@
             transition: all .5s;
         }
 
-        
+        .navbar-toggler:focus {
+            outline: 0;
+            box-shadow: none;
+        }
+
+        .dropdown-mega .dropdown-menu {
+            margin-top: 0;
+            width: 100%;
+            border: none;
+            border-radius: unset;
+            transition: all .5s;
+        }
+
+        .list-item {
+            color: black;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a.list-item:hover {
+            color: #eeb361;
+        }
+
+        .btn-custome {
+            border: 1px solid black;
+            color: white;
+            background: rgb(0, 0, 0);
+            /* default color */
+
+            /* "to left" / "to right" - affects initial color */
+            background: linear-gradient(to left, rgb(0, 0, 0)rgb(255, 255, 255)htblue 50%) right;
+            background-size: 200%;
+            transition: .4s ease-out;
+        }
+
+        .btn-custome:hover {
+            border: 0.5px solid black;
+            background-position: left;
+        }
+
+        .about-us {
+            width: 65vw;
+        }
+
         @media (max-width:991px) {
             .sidebar {
                 background-color: rgba(255, 255, 255, 0.15);
                 backdrop-filter: blur(10px);
             }
+
+            .about-us {
+                width: 80vw;
+            }
+
+            .embed>* {
+                padding: 0.35em !important;
+            }
+        }
+
+        .embed {
+            overflow: hidden;
+            padding-block-start: 100%;
+            position: relative;
+        }
+
+        .embed--1-2 {
+            padding-top: calc(100% / (1 / 2));
+        }
+
+        .embed--2-1 {
+            padding-top: calc(100% / (2 / 1));
+        }
+
+        .embed--2-3 {
+            padding-top: calc(100% / (2 / 3));
+        }
+
+        .embed>* {
+            height: 100%;
+            left: 0;
+            object-fit: cover;
+            padding: 1em;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+
+        /* Gallery  */
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+
+        .gallery__item--h-2 {
+            grid-column-end: span 2;
+        }
+
+        .gallery__item--h-3 {
+            grid-column-end: span 3;
+        }
+
+        .gallery__item--v-2 {
+            grid-row-end: span 2;
+        }
+
+        .gallery__item--v-3 {
+            grid-row-end: span 3;
         }
     </style>
 </head>
@@ -45,66 +163,61 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item mx-2">
-                            <a href="#" class="nav-link text-white active">Home</a>
+                            <a href="#" class="nav-link text-white active">HOME</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a href="#" class="nav-link text-white active">Collection</a>
+                            <a href="#" class="nav-link text-white active">COLLECTION</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a href="#" class="nav-link text-white active">Gallery</a>
+                            <a href="#" class="nav-link text-white active">GALLERY</a>
                         </li>
                         <li class="nav-item mx-2 dropdown dropdown-mega position-static">
-                            <a href="#" id="navbarDropdown" role="button" class="nav-link dropdown text-white" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
-                                Collection
+                            <a href="#" id="navbarDropdown" role="button" class="nav-link dropdown text-white"
+                                data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                                PAGES
                             </a>
-                            <!-- <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a href="#" class="dropdown-item text-white">Action</a></li>
-                                <li><a href="#" class="dropdown-item text-white">Another Action</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a href="#" class="dropdown-item text-white"></a></li>
-                            </ul> -->
-                            <div class="dropdown-menu shadow">
+                            <div class="dropdown-menu dropdown-mega-menu bg-light shadow">
                                 <div class="mega-content px-md-4">
                                     <div class="container-fluid">
                                         <div class="row">
-                                            <div class="col-lg-3 col-sm-6 py-4 px-xl-5 px-4">
+                                            <div class="col-lg-3 col-md-6 py-4 px-xl-5 px-4">
                                                 <h5>Services</h5>
                                                 <div class="list-group">
-                                                    <a href="#" class="list-group-item">De-ba</a>
-                                                    <a href="#" class="list-group-item">De-ba</a>
-                                                    <a href="#" class="list-group-item">De-ba</a>
-                                                    <a href="#" class="list-group-item">De-ba</a>
-                                                    <a href="#" class="list-group-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-3 col-sm-6 py-4 px-xl-5 px-4">
+                                            <div class="col-lg-3 col-md-6 py-4 px-xl-5 px-4">
                                                 <h5>Services</h5>
                                                 <div class="list-group">
-                                                    <a href="#" class="list-group-item">De-ba</a>
-                                                    <a href="#" class="list-group-item">De-ba</a>
-                                                    <a href="#" class="list-group-item">De-ba</a>
-                                                    <a href="#" class="list-group-item">De-ba</a>
-                                                    <a href="#" class="list-group-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-3 col-sm-6 py-4 px-xl-5 px-4">
+                                            <div class="col-lg-3 col-md-6 py-4 px-xl-5 px-4">
                                                 <h5>Services</h5>
                                                 <div class="list-group">
-                                                    <a href="#" class="list-group-item">De-ba</a>
-                                                    <a href="#" class="list-group-item">De-ba</a>
-                                                    <a href="#" class="list-group-item">De-ba</a>
-                                                    <a href="#" class="list-group-item">De-ba</a>
-                                                    <a href="#" class="list-group-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-3 col-sm-6 py-4 px-xl-5 px-4">
+                                            <div class="col-lg-3 col-md-6 py-4 px-xl-5 px-4">
                                                 <h5>Services</h5>
                                                 <div class="list-group">
-                                                    <a href="#" class="list-group-item">De-ba</a>
-                                                    <a href="#" class="list-group-item">De-ba</a>
-                                                    <a href="#" class="list-group-item">De-ba</a>
-                                                    <a href="#" class="list-group-item">De-ba</a>
-                                                    <a href="#" class="list-group-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -112,14 +225,14 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item mx-2">
+                        <!-- <li class="nav-item mx-2">
                             <a href="#" class="nav-link text-white active">Register</a>
-                        </li>
+                        </li> -->
                     </ul>
                     <div class="d-flex justify-content-center align-items-center gap-3">
-                        <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1 rounded-4">Login</a>
-                        <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1 bg-primary rounded-4"
-                            style="background-color: #f09417;">Register</a>
+                        <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1">Login</a>
+                        <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1">Register</a>
+                        <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1">Cart (0)</a>
                     </div>
                 </div>
             </div>
@@ -128,77 +241,157 @@
         </div>
     </nav>
 
-    <div class="banner-image w-100 vh-100 d-lex justify-content align-items-center" id="carousel-slider">
+    <div class="banner-image w-100 d-flex justify-content align-items-center" id="carousel-slider"
+        style="max-height: 90vh;">
         <div>
-            <img class="d-block banner-image w-100 vh-100 d-lex justify-content align-items-center"
+            <img class="d-block banner-image w-100 d-lex justify-content align-items-center"
+                style="max-height: 90vh; object-fit: cover;"
                 src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/dc-lovensky-437061.jpg"
                 style="object-fit: cover;" alt="First slide">
         </div>
         <div>
-            <img class="d-block banner-image w-100 vh-100 d-lex justify-content align-items-center"
-                style="object-fit: cover;"
+            <img class="d-block banner-image w-100 d-lex justify-content align-items-center"
+                style="max-height: 90vh; object-fit: cover;" style="object-fit: cover;"
                 src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/timothy-paul-smith-405497.jpg"
                 alt="Third slide">
         </div>
         <div>
-            <img class="d-block banner-image w-100 vh-100 d-lex justify-content align-items-center"
-                style="object-fit: cover;"
+            <img class="d-block banner-image w-100 d-lex justify-content align-items-center"
+                style="max-height: 90vh; object-fit: cover;" style="object-fit: cover;"
                 src="https://wiso.foxthemes.me/wp-content/uploads/2018/05/stock-photo-203371029.jpg" alt="Third slide">
         </div>
     </div>
 
-    <div class="container my-5 d-grid gap-5">
-        <div class="p-5 border">
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error vitae a earum, maxime minus quos ipsa
-                aspernatur molestiae necessitatibus impedit molestias ipsam. Neque dolorem est dolore aliquid iste quod
-                necessitatibus.
-            </p>
-        </div>
-        <div class="p-5 border">
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error vitae a earum, maxime minus quos ipsa
-                aspernatur molestiae necessitatibus impedit molestias ipsam. Neque dolorem est dolore aliquid iste quod
-                necessitatibus.
-            </p>
-        </div>
-        <div class="p-5 border">
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error vitae a earum, maxime minus quos ipsa
-                aspernatur molestiae necessitatibus impedit molestias ipsam. Neque dolorem est dolore aliquid iste quod
-                necessitatibus.
-            </p>
-        </div>
-        <div class="p-5 border">
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error vitae a earum, maxime minus quos ipsa
-                aspernatur molestiae necessitatibus impedit molestias ipsam. Neque dolorem est dolore aliquid iste quod
-                necessitatibus.
-            </p>
-        </div>
-        <div class="p-5 border">
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error vitae a earum, maxime minus quos ipsa
-                aspernatur molestiae necessitatibus impedit molestias ipsam. Neque dolorem est dolore aliquid iste quod
-                necessitatibus.
-            </p>
-        </div>
-        <div class="p-5 border">
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error vitae a earum, maxime minus quos ipsa
-                aspernatur molestiae necessitatibus impedit molestias ipsam. Neque dolorem est dolore aliquid iste quod
-                necessitatibus.
-            </p>
+    <div class="d-flex align-items-center justify-content-center" style="min-height: 40vh;">
+        <div class="about-us text-center">
+            <p class="text-secondary mt-5">ABOUT US</p>
+            <p class="fs-3 fw-normal text-align">My greatest ambition is to create powerful images that commemorate,
+                across generations, the people we love and the good times we have had. Creativity, hard work and
+                experience</p>
+            <a href="#" class="btn btn-custome my-5 py-2 px-3" style="border-radius: 0;">CONTACT US</a>
         </div>
     </div>
+    <div class="px-3">
+        <div class="gallery">
+            <div class="gallery__item">
+                <div class="embed">
+                    <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/jeremy-bishop-409039.jpg" />
+                </div>
+            </div>
+            <div class="gallery__item gallery__item--h-2">
+                <div class="embed embed--2-1">
+                    <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/jakob-owens-190795.jpg" />
+                </div>
+            </div>
+            <div class="gallery__item">
+                <div class="embed">
+                    <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/jordan-mixson-372459.jpg" />
+                </div>
+            </div>
+            <div class="gallery__item gallery__item--h-2 gallery__item--v-2">
+                <div class="embed">
+                    <img
+                        src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/sam-burriss-435641-e1526906975869.jpg" />
+                </div>
+            </div>
+            <div class="gallery__item">
+                <div class="embed">
+                    <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/icons8-team-355985.jpg" />
+                </div>
+            </div>
+            <div class="gallery__item">
+                <div class="embed">
+                    <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/annie-spratt-467871.jpg" />
+                </div>
+            </div>
+
+            <div class="gallery__item gallery__item--h-2">
+                <div class="embed embed--2-1">
+                    <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/jakob-owens-303060.jpg" />
+                </div>
+            </div>
+
+            <!-- <div class="gallery__item gallery__item--h-2">
+                <div class="embed embed--2-1">
+                    <img src="https://source.unsplash.com/collection/582659/8" />
+                </div>
+            </div>
+            <div class="gallery__item gallery__item--v-2">
+                <div class="embed embed--1-2">
+                    <img src="https://source.unsplash.com/collection/582659/9" />
+                </div>
+            </div>
+            
+            <div class="gallery__item">
+                <div class="embed">
+                    <img src="https://source.unsplash.com/collection/582659/11" />
+                </div>
+            </div>
+            <div class="gallery__item gallery__item--h-2 gallery__item--v-2">
+                <div class="embed">
+                    <img src="https://source.unsplash.com/collection/582659/12" />
+                </div>
+            </div>
+            <div class="gallery__item">
+                <div class="embed">
+                    <img src="https://source.unsplash.com/collection/582659/13" />
+                </div>
+            </div>
+            <div class="gallery__item gallery__item--h-2 gallery__item--v-3">
+                <div class="embed embed--2-3">
+                    <img src="https://source.unsplash.com/collection/582659/14" />
+                </div>
+            </div>
+            <div class="gallery__item gallery__item--h-2 gallery__item--v-2">
+                <div class="embed">
+                    <img src="https://source.unsplash.com/collection/582659/15" />
+                </div>
+            </div>
+            <div class="gallery__item gallery__item--v-2">
+                <div class="embed embed--1-2">
+                    <img src="https://source.unsplash.com/collection/582659/16" />
+                </div>
+            </div>
+            <div class="gallery__item">
+                <div class="embed">
+                    <img src="https://source.unsplash.com/collection/582659/17" />
+                </div>
+            </div>
+            <div class="gallery__item">
+                <div class="embed">
+                    <img src="https://source.unsplash.com/collection/582659/18" />
+                </div>
+            </div>
+            <div class="gallery__item">
+                <div class="embed">
+                    <img src="https://source.unsplash.com/collection/582659/19" />
+                </div>
+            </div>
+            <div class="gallery__item">
+                <div class="embed">
+                    <img src="https://source.unsplash.com/collection/582659/20" />
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="container m-5">
+        <div class="row">
+            <div class="col-md-4">
+                <p class="fs-3 mb-3">Blog updated</p>
+                <p>With over 5 years of experience, numerous workshops and features in top wedding publications.</p>
+                <a href="#" class="btn btn-custome py-2 px-3" style="border-radius: 0;">READ THE BLOG</a>
+            </div>
+            <div class="col-md-8"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
     <!-- Calling Slick Library -->
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -207,14 +400,14 @@
 
         window.addEventListener('scroll', function () {
             if (window.pageYOffset > 100) {
-                nav.classList.add('bg-light', 'shadow');
+                nav.classList.add('bg-light');
                 var textWhiteElements = nav.querySelectorAll('.text-white');
                 textWhiteElements.forEach(function (element) {
                     element.classList.add('text-dark');
                     element.classList.remove('text-white');
                 });
             } else {
-                nav.classList.remove('bg-light', 'shadow');
+                nav.classList.remove('bg-light');
                 var textDarkElements = nav.querySelectorAll('.text-dark');
                 textDarkElements.forEach(function (element) {
                     element.classList.remove('text-dark');
