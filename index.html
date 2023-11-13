@@ -146,6 +146,41 @@
         .gallery__item--v-3 {
             grid-row-end: span 3;
         }
+        .blog-card {
+    max-width: 20rem; /* Adjust the width as needed */
+  }
+
+  .blog-image img {
+    width: 100%;
+    display: block;
+  }
+
+  .blog-date {
+    font-size: 2.5em;
+    font-weight: bold;
+  }
+
+  .blog-title {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  .blog-category {
+    font-size: 0.85em;
+    font-weight: bold;
+    padding-left: 1rem;
+    border-left: 4px solid black;
+    display: inline-block;
+    margin-left: -1rem;
+  }
+
+  .blog-meta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px; /* Fixed height for alignment */
+    padding: 0.5rem;
+  }
     </style>
 </head>
 
@@ -374,14 +409,41 @@
             </div> -->
         </div>
     </div>
-    <div class="container m-5">
+    <div class="container my-5">
+        <!-- Blog Section -->
         <div class="row">
-            <div class="col-md-4">
-                <p class="fs-3 mb-3">Blog updated</p>
+            <!-- Blog Updated -->
+            <div class="col-md-4 mb-3">
+                <p class="fs-1"><b>Blog updated</b></p>
                 <p>With over 5 years of experience, numerous workshops and features in top wedding publications.</p>
-                <a href="#" class="btn btn-custome py-2 px-3" style="border-radius: 0;">READ THE BLOG</a>
+                <a class="btn btn-custome my-5 py-2 px-3" style="border-radius: 0;">Read the Blog</a>
             </div>
-            <div class="col-md-8"></div>
+
+            <!-- Blog Entry 1 -->
+            <div class="col-md-8 mb-3">
+                <div class="row">
+                    <div class="col-md-6">
+                      <div class="card">
+                        <img src="path_to_your_image.jpg" class="card-img-top" alt="...">
+                        <div class="card-body blog-meta">
+                          <h5 class="blog-date">15 JAN, 2018</h5>
+                          <p class="blog-category">TRAVEL</p>
+                          <h5 class="blog-title">Your choice to be photographer is better</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="card">
+                        <img src="path_to_your_second_image.jpg" class="card-img-top" alt="...">
+                        <div class="card-body blog-meta">
+                          <h5 class="blog-date">16 JAN, 2018</h5>
+                          <p class="blog-category">EDITORIAL</p>
+                          <h5 class="blog-title">What your friends think about photographers</h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
