@@ -146,41 +146,56 @@
         .gallery__item--v-3 {
             grid-row-end: span 3;
         }
+
         .blog-card {
-    max-width: 20rem; /* Adjust the width as needed */
-  }
+            max-width: 20rem;
+            /* Adjust the width as needed */
+        }
 
-  .blog-image img {
-    width: 100%;
-    display: block;
-  }
+        .blog-image img {
+            width: 100%;
+            display: block;
+        }
 
-  .blog-date {
-    font-size: 2.5em;
-    font-weight: bold;
-  }
+        .blog-date {
+            font-size: 2.5em;
+            font-weight: bold;
+        }
 
-  .blog-title {
-    font-size: 1em;
-    font-weight: bold;
-  }
+        .blog-title {
+            font-size: 1em;
+            font-weight: bold;
+        }
 
-  .blog-category {
-    font-size: 0.85em;
-    font-weight: bold;
-    padding-left: 1rem;
-    border-left: 4px solid black;
-    display: inline-block;
-    margin-left: -1rem;
-  }
+        .blog-category {
+            font-size: 0.85em;
+            font-weight: bold;
+            padding-left: 1rem;
+            border-left: 4px solid black;
+            display: inline-block;
+            margin-left: -1rem;
+        }
 
-  .blog-meta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100px; /* Fixed height for alignment */
-    padding: 0.5rem;
-  }
+        .blog-meta {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100px;
+            /* Fixed height for alignment */
+            padding: 0.5rem;
+        }
+
+        .hidden-div {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.8s, visibility 0.8s;
+        }
+
+        .visible-div {
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.8s, visibility 0.8s;
+        }
     </style>
 </head>
 
@@ -297,7 +312,7 @@
         </div>
     </div>
 
-    <div class="d-flex align-items-center justify-content-center" style="min-height: 40vh;">
+    <div class="d-flex align-items-center justify-content-center hidden-div" id="about-us" style="min-height: 40vh;">
         <div class="about-us text-center">
             <p class="text-secondary mt-5">ABOUT US</p>
             <p class="fs-3 fw-normal text-align">My greatest ambition is to create powerful images that commemorate,
@@ -423,29 +438,82 @@
             <div class="col-md-8 mb-3">
                 <div class="row">
                     <div class="col-md-6">
-                      <div class="card">
-                        <img src="path_to_your_image.jpg" class="card-img-top" alt="...">
-                        <div class="card-body blog-meta">
-                          <h5 class="blog-date">15 JAN, 2018</h5>
-                          <p class="blog-category">TRAVEL</p>
-                          <h5 class="blog-title">Your choice to be photographer is better</h5>
-                        </div>
-                      </div>
+                        <article class="card  border-0" style="max-height: 400px;">
+                            <div class="post-slider slider-sm slick-initialized slick-slider">
+                                <div class="slick-list draggable">
+                                    <div class="slick-track"
+                                        style="opacity: 1; width: 100%; transform: translate3d(0px, 0px, 0px);"><img
+                                            src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/teaksu-kim-226783-1024x680.jpg"
+                                            class="card-img-top slick-slide slick-current slick-active" alt="post-thumb"
+                                            data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body p-0">
+                                <a class="post-title text-dark fs-4" href="post-details.html">Use apples
+                                    to give
+                                    your bakes caramel and a moist texture</a>
+                                <ul class="card-meta list-inline">
+                                    <li class="list-inline-item">
+                                        <i class="ti-calendar"></i><span class="fs-2">14</span> jan, 2020
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <ul class="card-meta-tag list-inline">
+                                            <li class="list-inline-item"><a href="#" class="text-secondary">Color</a>
+                                            </li>
+                                            <li class="list-inline-item"><a href="#" class="text-secondary">Recipe</a>
+                                            </li>
+                                            <li class="list-inline-item"><a href="#" class="text-secondary">Fish</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </article>
                     </div>
                     <div class="col-md-6">
-                      <div class="card">
-                        <img src="path_to_your_second_image.jpg" class="card-img-top" alt="...">
-                        <div class="card-body blog-meta">
-                          <h5 class="blog-date">16 JAN, 2018</h5>
-                          <p class="blog-category">EDITORIAL</p>
-                          <h5 class="blog-title">What your friends think about photographers</h5>
-                        </div>
-                      </div>
+                        <article class="card border-0" style="max-height: 400px;">
+                            <div class="post-slider slider-sm slick-initialized slick-slider">
+                                <div class="slick-list draggable">
+                                    <div class="slick-track"
+                                        style="opacity: 1; width: 100%; transform: translate3d(0px, 0px, 0px);"><img
+                                            src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/dc-lovensky-437061-1024x682.jpg"
+                                            class="card-img-top slick-slide slick-current slick-active" alt="post-thumb"
+                                            data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-body p-0">
+                                <a class="post-title text-dark fs-4" href="post-details.html">Use apples to give
+                                    your bakes caramel and a moist texture</a>
+                                <ul class="card-meta list-inline">
+
+                                    <li class="list-inline-item">
+                                        <i class="ti-calendar"></i><span class="fs-2">14</span> jan, 2020
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <ul class="card-meta-tag list-inline">
+                                            <li class="list-inline-item"><a href="#" class="text-secondary">Color</a>
+                                            </li>
+                                            <li class="list-inline-item"><a href="#" class="text-secondary">Recipe</a>
+                                            </li>
+                                            <li class="list-inline-item"><a href="#" class="text-secondary">Fish</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </article>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
+    <hr>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -486,6 +554,23 @@
             autoplaySpeed: 1500,
             mobileFirst: true
         });
+
+        window.addEventListener('scroll', function () {
+            var yourDiv = document.getElementById('about-us');
+            var divTop = yourDiv.offsetTop;
+            var divHeight = yourDiv.offsetHeight;
+            var windowHeight = window.innerHeight;
+            var windowScrollTop = window.pageYOffset;
+
+            if (windowScrollTop > divTop + divHeight || windowScrollTop + windowHeight < divTop) {
+                yourDiv.classList.remove('visible-div');
+                yourDiv.classList.add('hidden-div');
+            } else {
+                yourDiv.classList.remove('hidden-div');
+                yourDiv.classList.add('visible-div');
+            }
+        });
+
     </script>
 
 </body>
