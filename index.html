@@ -12,193 +12,12 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="aos/aos.css">
-    <style>
-        body {
-            font-family: 'Playfair Display';
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-family: "Open Sans", sans-serif;
-        }
-
-        .banner-image {
-            background-size: cover;
-        }
-
-        .navbar-expand-lg {
-            transition: all .5s;
-        }
-
-        .navbar-toggler:focus {
-            outline: 0;
-            box-shadow: none;
-        }
-
-        .dropdown-mega .dropdown-menu {
-            margin-top: 0;
-            width: 100%;
-            border: none;
-            border-radius: unset;
-            transition: all .5s;
-        }
-
-        .list-item {
-            color: black;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        a.list-item:hover {
-            color: #eeb361;
-        }
-
-        .btn-custome {
-            border: 1px solid black;
-            color: white;
-            background: rgb(0, 0, 0);
-            /* default color */
-
-            /* "to left" / "to right" - affects initial color */
-            background: linear-gradient(to left, rgb(0, 0, 0)rgb(255, 255, 255)htblue 50%) right;
-            background-size: 200%;
-            transition: .4s ease-out;
-        }
-
-        .btn-custome:hover {
-            border: 0.5px solid black;
-            background-position: left;
-        }
-
-        .about-us {
-            width: 65vw;
-        }
-
-        @media (max-width:991px) {
-            .sidebar {
-                background-color: rgba(255, 255, 255, 0.15);
-                backdrop-filter: blur(10px);
-            }
-
-            .about-us {
-                width: 80vw;
-            }
-
-            .embed>* {
-                padding: 0.35em !important;
-            }
-        }
-
-        .embed {
-            overflow: hidden;
-            padding-block-start: 100%;
-            position: relative;
-        }
-
-        .embed--1-2 {
-            padding-top: calc(100% / (1 / 2));
-        }
-
-        .embed--2-1 {
-            padding-top: calc(100% / (2 / 1));
-        }
-
-        .embed--2-3 {
-            padding-top: calc(100% / (2 / 3));
-        }
-
-        .embed>* {
-            height: 100%;
-            left: 0;
-            object-fit: cover;
-            padding: 1em;
-            position: absolute;
-            top: 0;
-            width: 100%;
-        }
-
-        /* Gallery  */
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-        }
-
-        .gallery__item--h-2 {
-            grid-column-end: span 2;
-        }
-
-        .gallery__item--h-3 {
-            grid-column-end: span 3;
-        }
-
-        .gallery__item--v-2 {
-            grid-row-end: span 2;
-        }
-
-        .gallery__item--v-3 {
-            grid-row-end: span 3;
-        }
-
-        .blog-card {
-            max-width: 20rem;
-            /* Adjust the width as needed */
-        }
-
-        .blog-image img {
-            width: 100%;
-            display: block;
-        }
-
-        .blog-date {
-            font-size: 2.5em;
-            font-weight: bold;
-        }
-
-        .blog-title {
-            font-size: 1em;
-            font-weight: bold;
-        }
-
-        .blog-category {
-            font-size: 0.85em;
-            font-weight: bold;
-            padding-left: 1rem;
-            border-left: 4px solid black;
-            display: inline-block;
-            margin-left: -1rem;
-        }
-
-        .blog-meta {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100px;
-            /* Fixed height for alignment */
-            padding: 0.5rem;
-        }
-
-        .hidden-div {
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.8s, visibility 0.8s;
-        }
-
-        .visible-div {
-            opacity: 1;
-            visibility: visible;
-            transition: opacity 0.8s, visibility 0.8s;
-        }
-    </style>
+    <link rel="stylesheet" href="aos/aos.css">
+    <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -215,17 +34,18 @@
                 <div class="offcanvas-body">
                     <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                         <li class="nav-item mx-2">
-                            <a href="#" class="nav-link text-white active">HOME</a>
+                            <a href="#" class="nav-link menu_parent text-white active">HOME</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a href="#" class="nav-link text-white active">COLLECTION</a>
+                            <a href="#" class="nav-link menu_parent text-white active">COLLECTION</a>
                         </li>
                         <li class="nav-item mx-2">
-                            <a href="#" class="nav-link text-white active">GALLERY</a>
+                            <a href="#" class="nav-link menu_parent text-white active">GALLERY</a>
                         </li>
                         <li class="nav-item mx-2 dropdown dropdown-mega position-static">
-                            <a href="#" id="navbarDropdown" role="button" class="nav-link dropdown text-white"
-                                data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            <a href="#" id="navbarDropdown" role="button"
+                                class="nav-link menu_parent dropdown text-white" data-bs-toggle="dropdown"
+                                aria-expanded="false" data-bs-auto-close="outside">
                                 PAGES
                             </a>
                             <div class="dropdown-menu dropdown-mega-menu bg-light shadow">
@@ -281,15 +101,32 @@
                             <a href="#" class="nav-link text-white active">Register</a>
                         </li> -->
                     </ul>
-                    <div class="d-flex justify-content-center align-items-center gap-3">
-                        <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1">Login</a>
-                        <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1">Register</a>
-                        <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1">Cart (0)</a>
+                    <div class=" menu-right">
+                        <ul class=" list-unstyled d-flex justify-content-center align-items-center gap-3 mb-0">
+                            <li>
+                                <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1">Login</a>
+
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1">Register</a>
+                            </li>
+
+                            <li class="position-relative li-menu-cart">
+                                <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1  cart-menu-tab"><i
+                                        class="bi bi-bag"></i> <span>(0)</span></a>
+                                <div class=" cart-hid">
+                                    <div class=" content-cart-hid">
+                                        <a href="#" class=" text-uppercase text-decoration-none"> go to cart <i
+                                                class="bi bi-arrow-right"></i> </a>
+                                        <p class="mb-0  total-cart-menu"> Total: <span class=" total-number">
+                                                &pound;0.00 </span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
-
         </div>
     </nav>
 
@@ -574,12 +411,12 @@
         });
 
     </script>
-            <script src="aos/aos.js"></script>
-<script>
-  AOS.init({
-    once: true,
-  });
-</script>
+    <script src="aos/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
 
 </body>
 
