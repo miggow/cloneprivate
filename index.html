@@ -4,56 +4,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet'>
+    
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
     <link rel="stylesheet" href="aos/aos.css">
     <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="slick/slick-style.css">
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg p-md-3">
-        <div class="container">
-            <a href="" class="navbar-brand text-white fs-2" style="font-family: Georgia;">DE-BA</a>
-            <button type="button" class="navbar-toggler shadow-none border-0" data-bs-target="#offcanvasNavbar"
-                data-bs-toggle="offcanvas" aria-controls="offcanvasNavbar" aria-expanded="false"
-                aria-label="Toggle Navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                        <li class="nav-item mx-2">
-                            <a href="#" class="nav-link menu_parent text-white active">HOME</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a href="#" class="nav-link menu_parent text-white active">COLLECTION</a>
-                        </li>
-                        <li class="nav-item mx-2">
-                            <a href="#" class="nav-link menu_parent text-white active">GALLERY</a>
-                        </li>
-                        <li class="nav-item mx-2 dropdown dropdown-mega position-static">
-                            <a href="#" id="navbarDropdown" role="button"
-                                class="nav-link menu_parent dropdown text-white" data-bs-toggle="dropdown"
-                                aria-expanded="false" data-bs-auto-close="outside">
-                                PAGES
-                            </a>
-                            <div class="dropdown-menu dropdown-mega-menu bg-light shadow">
-                                <div class="mega-content px-md-4">
-                                    <div class="container-fluid">
+    <div class=" big-menu">
+        <div class="menu-bar">
+            <div class=" menu-content">
+                <div class=" d-flex justify-content-between align-items-center">
+                    <div class=" logo-menu">
+                        <a href="" class=" menu-text"> DE-BA </a>
+                    </div>
+                    <div class=" menu-center">
+                        <ul class="mb-0 d-flex justify-content-center align-items-center list-unstyled">
+                            <li class="">
+                                <a href="#" class=" menu_parent">HOME</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class=" menu_parent">COLLECTION</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class=" menu_parent">GALLERY</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class=" menu_parent ">
+                                    PAGES
+                                </a>
+                                <div class="menu-child">
+                                    <div class="mega-content">
+                                        <div class="list-menu-content">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <a href="#" class=" menu_list_child">GALLERY</a>
+                                                    <div class="list-group">
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <a href="#" class=" menu_list_child">GALLERY</a>
+                                                    <div class="list-group">
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <a href="#" class=" menu_list_child">GALLERY</a>
+                                                    <div class="list-group">
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <a href="#" class=" menu_list_child">GALLERY</a>
+                                                    <div class="list-group">
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                        <a href="#" class="list-item">De-ba</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class=" ">
+                                <a href="#" class=" menu_parent">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class=" menu-right">
+                        <div class=" content-menu-right ">
+                            <ul class="mb-0 list-unstyled d-flex justify-content-end align-items-center">
+                                <li class="position-relative li-menu-cart">
+                                    <a href="#" class="text-decoration-none  cart-menu-tab"><i class="bi bi-bag"></i>
+                                        <span>(0)</span></a>
+                                    <div class=" cart-hid">
+                                        <div class=" content-cart-hid">
+                                            <a href="#" class=" text-uppercase text-decoration-none"> go to cart <i
+                                                    class="bi bi-arrow-right"></i> </a>
+                                            <p class="mb-0  total-cart-menu"> Total: <span class=" total-number">
+                                                    &pound;0.00 </span> </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="search"></p>
+                                </li>
+                                <li>
+                                    <a class="d-inline-block" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                        role="button" aria-controls="offcanvasExample">
+                                        <div class="menu_icon">
+                                            <span class="hamburger2 active">
+                                                <span class="top-bun"></span>
+                                                <span class="meat"></span>
+                                                <span class="bottom-bun"></span>
+                                            </span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                    aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <div class=" logo-menu text-center">
+                            <a href="" class=" menu-text"> DE-BA </a>
+                        </div>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="d-flex box-menu-side">
+                            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                                <li class="nav-item mx-2">
+                                    <a href="#" class=" menu_parent">HOME</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a href="#" class=" menu_parent">COLLECTION</a>
+                                </li>
+                                <li class="nav-item mx-2">
+                                    <a href="#" class=" menu_parent">GALLERY</a>
+                                </li>
+                                <li class="nav-item mx-2 dropdown dropdown-mega">
+                                    <a href="#">
+                                        PAGES
+                                    </a>
+                                    <div class="list-menu-content">
                                         <div class="row">
-                                            <div class="col-lg-3 col-md-6 py-4 px-xl-5 px-4">
-                                                <h5>Services</h5>
+                                            <div class="col-lg-3">
+                                                <a href="#" class=" menu_list_child">GALLERY</a>
                                                 <div class="list-group">
                                                     <a href="#" class="list-item">De-ba</a>
                                                     <a href="#" class="list-item">De-ba</a>
@@ -62,8 +172,8 @@
                                                     <a href="#" class="list-item">De-ba</a>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-3 col-md-6 py-4 px-xl-5 px-4">
-                                                <h5>Services</h5>
+                                            <div class="col-lg-3">
+                                                <a href="#" class=" menu_list_child">GALLERY</a>
                                                 <div class="list-group">
                                                     <a href="#" class="list-item">De-ba</a>
                                                     <a href="#" class="list-item">De-ba</a>
@@ -72,8 +182,8 @@
                                                     <a href="#" class="list-item">De-ba</a>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-3 col-md-6 py-4 px-xl-5 px-4">
-                                                <h5>Services</h5>
+                                            <div class="col-lg-3">
+                                                <a href="#" class=" menu_list_child">GALLERY</a>
                                                 <div class="list-group">
                                                     <a href="#" class="list-item">De-ba</a>
                                                     <a href="#" class="list-item">De-ba</a>
@@ -82,8 +192,8 @@
                                                     <a href="#" class="list-item">De-ba</a>
                                                 </div>
                                             </div>
-                                            <div class="col-lg-3 col-md-6 py-4 px-xl-5 px-4">
-                                                <h5>Services</h5>
+                                            <div class="col-lg-3">
+                                                <a href="#" class=" menu_list_child">GALLERY</a>
                                                 <div class="list-group">
                                                     <a href="#" class="list-item">De-ba</a>
                                                     <a href="#" class="list-item">De-ba</a>
@@ -94,73 +204,47 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                        </li>
-                        <!-- <li class="nav-item mx-2">
-                            <a href="#" class="nav-link text-white active">Register</a>
-                        </li> -->
-                    </ul>
-                    <div class=" menu-right">
-                        <ul class=" list-unstyled d-flex justify-content-center align-items-center gap-3 mb-0">
-                            <li>
-                                <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1">Login</a>
+                                </li>
+                                <li class="">
+                                    <a href="#" class="">Register</a>
+                                </li>
+                            </ul>
 
-                            </li>
-                            <li>
-                                <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1">Register</a>
-                            </li>
+                        </div>
 
-                            <li class="position-relative li-menu-cart">
-                                <a href="#" class="text-decoration-none mx-2 text-white px-3 py-1  cart-menu-tab"><i
-                                        class="bi bi-bag"></i> <span>(0)</span></a>
-                                <div class=" cart-hid">
-                                    <div class=" content-cart-hid">
-                                        <a href="#" class=" text-uppercase text-decoration-none"> go to cart <i
-                                                class="bi bi-arrow-right"></i> </a>
-                                        <p class="mb-0  total-cart-menu"> Total: <span class=" total-number">
-                                                &pound;0.00 </span> </p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
 
-    <div class="banner-image w-100 d-flex justify-content align-items-center" id="carousel-slider"
-        style="max-height: 90vh;">
+
+    <div class="banner-image d-flex justify-content align-items-center" id="carousel-slider">
         <div>
-            <img class="d-block banner-image w-100 d-lex justify-content align-items-center"
-                style="max-height: 90vh; object-fit: cover;"
-                src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/dc-lovensky-437061.jpg"
-                style="object-fit: cover;" alt="First slide">
+            <img class="d-block banner-image w-100"
+                src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/dc-lovensky-437061.jpg" alt="First slide">
         </div>
         <div>
-            <img class="d-block banner-image w-100 d-lex justify-content align-items-center"
-                style="max-height: 90vh; object-fit: cover;" style="object-fit: cover;"
+            <img class="d-block banner-image w-100"
                 src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/timothy-paul-smith-405497.jpg"
                 alt="Third slide">
         </div>
         <div>
-            <img class="d-block banner-image w-100 d-lex justify-content align-items-center"
-                style="max-height: 90vh; object-fit: cover;" style="object-fit: cover;"
+            <img class="d-block banner-image w-100"
                 src="https://wiso.foxthemes.me/wp-content/uploads/2018/05/stock-photo-203371029.jpg" alt="Third slide">
         </div>
     </div>
 
-    <div class="d-flex align-items-center justify-content-center hidden-div" id="about-us" style="min-height: 40vh;">
+    <div class="d-flex align-items-center justify-content-center hidden-div" id="about-us" style="min-height: 40vh;" data-aos="fade-up" data-aos-duration="1000">
         <div class="about-us text-center">
-            <p class="text-secondary mt-5">ABOUT US</p>
-            <p class="fs-3 fw-normal text-align">My greatest ambition is to create powerful images that commemorate,
+            <p class="text-secondary mt-5 title-about-us ">ABOUT US</p>
+            <p class="content-about-us">My greatest ambition is to create powerful images that commemorate,
                 across generations, the people we love and the good times we have had. Creativity, hard work and
                 experience</p>
-            <a href="#" class="btn btn-custome my-5 py-2 px-3" style="border-radius: 0;">CONTACT US</a>
+            <a href="#" class="btn btn-custome" style="border-radius: 0;">CONTACT US</a>
         </div>
     </div>
-    <div class="px-3">
+    <div class="px-3" data-aos="fade-up" data-aos-duration="1000">
         <div class="gallery">
             <div class="gallery__item">
                 <div class="embed">
@@ -263,96 +347,220 @@
             </div> -->
         </div>
     </div>
-    <div class="container my-5">
-        <!-- Blog Section -->
-        <div class="row">
-            <!-- Blog Updated -->
-            <div class="col-md-4 mb-3" data-aos="fade-up" data-aos-duration="1000">
-                <p class="fs-1"><b>Blog updated</b></p>
-                <p>With over 5 years of experience, numerous workshops and features in top wedding publications.</p>
-                <a class="btn btn-custome my-5 py-2 px-3" style="border-radius: 0;">Read the Blog</a>
+
+    <div class="wrap-product" data-aos="fade-up" data-aos-duration="1000">
+        <div class="wrap-content">
+            <div class=" text-center" data-aos="fade-up" data-aos-duration="1000">
+                <p class=" title-main"> product hot </p>
             </div>
-
-            <!-- Blog Entry 1 -->
-            <div class="col-md-8 mb-3">
-                <div class="row">
-                    <div class="col-md-6">
-                        <article class="card  border-0" style="max-height: 400px;">
-                            <div class="post-slider slider-sm slick-initialized slick-slider">
-                                <div class="slick-list draggable">
-                                    <div class="slick-track"
-                                        style="opacity: 1; width: 100%; transform: translate3d(0px, 0px, 0px);"><img
-                                            src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/teaksu-kim-226783-1024x680.jpg"
-                                            class="card-img-top slick-slide slick-current slick-active" alt="post-thumb"
-                                            data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 100%;">
-                                    </div>
-                                </div>
+            <div class=" container-pro-hot" data-aos="fade-up" data-aos-duration="1000">
+                <div class="mg-20 slick-product">
+                    <div class="pd-20 item-pro-slick">
+                        <div class=" item-product">
+                            <div class=" pic-pro">
+                                <p class="mb-0">
+                                    <a href="#" class=" hover_img">
+                                        <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/teaksu-kim-226783-1024x680.jpg"
+                                            class="w-100 img-fit" alt="product hot">
+                                    </a>
+                                </p>
                             </div>
-
-                            <div class="card-body p-0">
-                                <a class="post-title text-dark fs-4" href="post-details.html">Use apples
-                                    to give
-                                    your bakes caramel and a moist texture</a>
-                                <ul class="card-meta list-inline">
-                                    <li class="list-inline-item">
-                                        <i class="ti-calendar"></i><span class="fs-2">14</span> jan, 2020
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <ul class="card-meta-tag list-inline">
-                                            <li class="list-inline-item"><a href="#" class="text-secondary">Color</a>
-                                            </li>
-                                            <li class="list-inline-item"><a href="#" class="text-secondary">Recipe</a>
-                                            </li>
-                                            <li class="list-inline-item"><a href="#" class="text-secondary">Fish</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
+                            <div class=" box-name-pro">
+                                <h3>
+                                    <a href="#" class=" name-product "> product 1 </a>
+                                </h3>
+                                <p class=" mb-0 price-pro"> Price: <span class=" ms-2">&pound;4.5</span> </p>
                             </div>
-                        </article>
+                        </div>
                     </div>
-                    <div class="col-md-6">
-                        <article class="card border-0" style="max-height: 400px;">
-                            <div class="post-slider slider-sm slick-initialized slick-slider">
-                                <div class="slick-list draggable">
-                                    <div class="slick-track"
-                                        style="opacity: 1; width: 100%; transform: translate3d(0px, 0px, 0px);"><img
-                                            src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/dc-lovensky-437061-1024x682.jpg"
-                                            class="card-img-top slick-slide slick-current slick-active" alt="post-thumb"
-                                            data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 100%;">
-                                    </div>
-                                </div>
+                    <div class="pd-20 item-pro-slick">
+                        <div class=" item-product">
+                            <div class=" pic-pro">
+                                <p class="mb-0">
+                                    <a href="#" class=" hover_img">
+                                        <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/teaksu-kim-226783-1024x680.jpg"
+                                            class="w-100 img-fit" alt="product hot">
+                                    </a>
+                                </p>
                             </div>
-
-                            <div class="card-body p-0">
-                                <a class="post-title text-dark fs-4" href="post-details.html">Use apples to give
-                                    your bakes caramel and a moist texture</a>
-                                <ul class="card-meta list-inline">
-
-                                    <li class="list-inline-item">
-                                        <i class="ti-calendar"></i><span class="fs-2">14</span> jan, 2020
-                                    </li>
-                                    <li class="list-inline-item">
-                                        <ul class="card-meta-tag list-inline">
-                                            <li class="list-inline-item"><a href="#" class="text-secondary">Color</a>
-                                            </li>
-                                            <li class="list-inline-item"><a href="#" class="text-secondary">Recipe</a>
-                                            </li>
-                                            <li class="list-inline-item"><a href="#" class="text-secondary">Fish</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
+                            <div class=" box-name-pro">
+                                <h3>
+                                    <a href="#" class=" name-product "> product 2 </a>
+                                </h3>
+                                <p class=" mb-0 price-pro"> Price: <span class=" ms-2">&pound;4.99</span> </p>
                             </div>
-                        </article>
+                        </div>
+                    </div>
+                    <div class="pd-20 item-pro-slick">
+                        <div class=" item-product">
+                            <div class=" pic-pro">
+                                <p class="mb-0">
+                                    <a href="#" class=" hover_img">
+                                        <img src="images/img5.png" class="w-100 img-fit" alt="product hot">
+                                    </a>
+                                </p>
+                            </div>
+                            <div class=" box-name-pro">
+                                <h3>
+                                    <a href="#" class=" name-product "> product 3 </a>
+                                </h3>
+                                <p class=" mb-0 price-pro"> Price: <span class=" ms-2">&pound;4.5</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pd-20 item-pro-slick">
+                        <div class=" item-product">
+                            <div class=" pic-pro">
+                                <p class="mb-0">
+                                    <a href="#" class=" hover_img">
+                                        <img src="images/img2.jpg" class="w-100 img-fit" alt="product hot">
+                                    </a>
+                                </p>
+                            </div>
+                            <div class=" box-name-pro">
+                                <h3>
+                                    <a href="#" class=" name-product "> product 4 </a>
+                                </h3>
+                                <p class=" mb-0 price-pro"> Price: <span class=" ms-2">&pound;7.00</span> </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <hr>
+
+    <div class="wrap-blog pd-tb" data-aos="fade-up" data-aos-duration="1000">
+        <!-- Blog Section -->
+        <div class=" wrap-content">
+            <div class="d-flex flex-wrap  justify-content-between  ">
+                <!-- Blog Updated -->
+                <div class="col-blog-left text-center" data-aos="fade-up" data-aos-duration="1000">
+                    <p class="title-main">Blog updated</p>
+                    <p class=" desc-blog">With over 5 years of experience, numerous workshops and features in top
+                        wedding publications.</p>
+                    <a class="btn btn-custome" style="border-radius: 0;">Read the Blog</a>
+                </div>
+
+                <!-- Blog Entry 1 -->
+                <div class="col-blog-right" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="cont-item-blog">
+                        <div class="slick-blog">
+                            <div class=" item-blog-slick">
+                                <div class=" item-blog">
+                                    <div class=" pic-blog">
+                                        <p class="mb-0">
+                                            <a href="#" class=" hover_img">
+                                                <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/teaksu-kim-226783-1024x680.jpg"
+                                                    class="w-100 img-fit" alt="post-thumb">
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div class=" info-blog">
+                                        <div class=" d-flex flex-wrap justify-content-between align-items-center">
+                                            <div class=" date">
+                                                <p class=" d-date"> 15 </p>
+                                                <p class=" mb-0 text-uppercase m-y-date"> jan, 2018 </p>
+                                            </div>
+                                            <div class=" info-blog-right">
+                                                <p class=" tag-blog">
+                                                    <a href="#" class=" text-uppercase position-relative">
+                                                        travel </a>
+                                                </p>
+                                                <h3 class=" mb-0"> <a href="#" class=" name-blog"> Your choice to be
+                                                        photograper is better </a> </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class=" item-blog-slick">
+                                <div class=" item-blog">
+                                    <div class=" pic-blog">
+                                        <p class="mb-0">
+                                            <a href="#" class="hover_img">
+                                                <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/dc-lovensky-437061-1024x682.jpg"
+                                                    class="w-100 img-fit" alt="post-thumb">
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div class=" info-blog">
+                                        <div class=" d-flex flex-wrap justify-content-between align-items-center">
+                                            <div class=" date">
+                                                <p class=" d-date"> 16 </p>
+                                                <p class=" mb-0 text-uppercase m-y-date"> jan, 2018 </p>
+                                            </div>
+                                            <div class=" info-blog-right">
+                                                <p class=" tag-blog">
+                                                    <a href="#" class=" text-uppercase position-relative">
+                                                        travel </a>
+                                                    <a href="#" class=" text-uppercase position-relative">
+                                                        night </a>
+                                                    <a href="#" class=" text-uppercase position-relative">
+                                                        photography </a>
+                                                </p>
+                                                <h3 class=" mb-0"> <a href="#" class=" name-blog"> What your friends
+                                                        think
+                                                        about photographers </a> </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class=" item-blog-slick">
+                                <div class=" item-blog">
+                                    <div class=" pic-blog">
+                                        <p class="mb-0">
+                                            <a href="#" class=" hover_img">
+                                                <img src="https://wiso.foxthemes.me/wp-content/uploads/2018/04/dc-lovensky-437061-1024x682.jpg"
+                                                    class="w-100 img-fit" alt="post-thumb">
+                                            </a>
+                                        </p>
+                                    </div>
+                                    <div class=" info-blog">
+                                        <div class=" d-flex flex-wrap justify-content-between align-items-center">
+                                            <div class=" date">
+                                                <p class=" d-date"> 16 </p>
+                                                <p class=" mb-0 text-uppercase m-y-date"> jan, 2018 </p>
+                                            </div>
+                                            <div class=" info-blog-right">
+                                                <p class=" tag-blog">
+                                                    <a href="#" class=" text-uppercase position-relative">
+                                                        travel </a>
+                                                    <a href="#" class=" text-uppercase position-relative">
+                                                        night </a>
+                                                </p>
+                                                <h3 class=" mb-0"> <a href="#" class=" name-blog"> What your friends
+                                                        think
+                                                        about photographers </a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" wrap-ig" data-aos="fade-up" data-aos-duration="1000">
+        <div class="wrap-content">
+            <div class=" text-center">
+                <p class=" title-main">instagram feed </p>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -361,13 +569,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
-
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+    <script type="text/javascript" src="aos/aos.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript" src="js.js"></script>
     <!-- Calling Slick Library -->
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script>
-        var nav = document.querySelector("nav");
+        // var nav = document.querySelector("nav");
 
-        window.addEventListener('scroll', function () {
+        /*window.addEventListener('scroll', function () {
             if (window.pageYOffset > 100) {
                 nav.classList.add('bg-light');
                 var textWhiteElements = nav.querySelectorAll('.text-white');
@@ -383,41 +593,40 @@
                     element.classList.add('text-white');
                 });
             }
-        });
+        });*/
         $("#carousel-slider").slick({
             arrows: false,
             infinite: true,
             slidesToShow: 1,
             slidesToScroll: 1,
             autoplay: true,
-            autoplaySpeed: 1500,
+            autoplaySpeed: 3000,
             mobileFirst: true
         });
 
-        window.addEventListener('scroll', function () {
-            var yourDiv = document.getElementById('about-us');
-            var divTop = yourDiv.offsetTop;
-            var divHeight = yourDiv.offsetHeight;
-            var windowHeight = window.innerHeight;
-            var windowScrollTop = window.pageYOffset;
 
-            if (windowScrollTop > divTop + divHeight || windowScrollTop + windowHeight < divTop) {
-                yourDiv.classList.remove('visible-div');
-                yourDiv.classList.add('hidden-div');
-            } else {
-                yourDiv.classList.remove('hidden-div');
-                yourDiv.classList.add('visible-div');
-            }
-        });
+        /* window.addEventListener('scroll', function () {
+             var yourDiv = document.getElementById('about-us');
+             var divTop = yourDiv.offsetTop;
+             var divHeight = yourDiv.offsetHeight;
+             var windowHeight = window.innerHeight;
+             var windowScrollTop = window.pageYOffset;
+ 
+             if (windowScrollTop > divTop + divHeight || windowScrollTop + windowHeight < divTop) {
+                 yourDiv.classList.remove('visible-div');
+                 yourDiv.classList.add('hidden-div');
+             } else {
+                 yourDiv.classList.remove('hidden-div');
+                 yourDiv.classList.add('visible-div');
+             }
+         });*/
 
     </script>
-    <script src="aos/aos.js"></script>
+
+
     <script>
-        AOS.init({
-            once: true,
-        });
-    </script>
 
+    </script>
 </body>
 
 </html>
