@@ -430,6 +430,46 @@ a.list-item:hover {
     font-weight: 600;
 }
 
+/* css grid */
+/* ---- grid ---- */
+
+.grid {
+    position: relative;
+    margin-top: 30px;
+    margin: 0 -15px;
+    
+}
+
+/* clear fix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+    width: 33%;
+}
+
+.grid-item {
+    float: left;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.grid-item img {
+    display: block;
+    max-width: 100%;
+}
+
+.wrap-grid-layout {
+    width: calc(100% - 60px);
+    margin: 0 auto;
+}
+
 /* css blog */
 .slick-blog {
     margin: 0 -15px;
