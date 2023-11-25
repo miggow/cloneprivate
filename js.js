@@ -7,6 +7,26 @@ jQuery(document).ready(function ($) {
         slidesToScroll: 1,
         autoplay: false,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 993,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 785,
+                settings: {
+                    slidesToShow: 2,                  
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 });
 
@@ -20,6 +40,20 @@ jQuery(document).ready(function ($) {
         slidesToScroll: 1,
         autoplay: false,
         arrows: false,
+        responsive: [         
+            {
+                breakpoint: 769,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     });
 });
 
@@ -43,13 +77,4 @@ $(window).scroll(function () {
     }
 });
 
-// init Masonry
-var $grid = $('.grid').masonry({
-    itemSelector: '.grid-item',
-    percentPosition: true,
-    columnWidth: '.grid-sizer',
-});
-// layout Masonry after each image loads
-$grid.imagesLoaded().progress(function () {
-    $grid.masonry();
-});  
+
