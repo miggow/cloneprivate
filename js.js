@@ -38,7 +38,7 @@ jQuery(document).ready(function ($) {
         autoplaySpeed: 3000,
         slidesToShow: 3,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         arrows: false,
         responsive: [         
             {
