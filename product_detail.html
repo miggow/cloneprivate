@@ -8,6 +8,7 @@
     <title>product detail</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
     <link rel="stylesheet" href="aos/aos.css">
     <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +20,8 @@
     <link rel="stylesheet" href="slick/slick-style.css">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
+    <link rel="stylesheet" href="magiczoom/magiczoomplus.css">
+    <link rel="stylesheet" href="fancybox5/fancybox.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -106,8 +109,8 @@
                                     <span>(0)</span></a>
                                 <div class=" cart-hid">
                                     <div class=" content-cart-hid">
-                                        <a href="cart_tpl.html" class=" text-uppercase text-decoration-none"> go to cart <i
-                                                class="bi bi-arrow-right"></i> </a>
+                                        <a href="cart_tpl.html" class=" text-uppercase text-decoration-none"> go to cart
+                                            <i class="bi bi-arrow-right"></i> </a>
                                         <p class="mb-0  total-cart-menu"> Total: <span class=" total-number">
                                                 &pound;0.00 </span> </p>
                                     </div>
@@ -223,8 +226,44 @@
     <div class=" row grid-pro-detail">
         <div class=" col-lg-5 left-pro-detail">
             <div class=" gallery-pro">
+                <a id="Zoom-1" class="MagicZoom"
+                    data-options="zoomMode: off; hint: off; rightClick: true; selectorTrigger: hover; expandCaption: false; history: false;"
+                    href="images/img1.jpg" title="">
+                    <img src="images/img1.jpg" alt="">
+                </a>
+                <div class="gallery-thumb-pro">
+                    <div class="slick-pro-detail">
+                        <div class=" pd-s-pro">
+                            <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="images/img1.jpg" title="">
+                                <img class="w-100" src="images/img1.jpg" />
+                            </a>
+                        </div>
 
+                        <div class=" pd-s-pro">
+                            <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="images/img2.jpg" title="">
+                                <img class="w-100" src="images/img2.jpg" />
+                            </a>
+                        </div>
+                        <div class=" pd-s-pro">
+                            <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="images/img3.jpg" title="">
+                                <img class="w-100" src="images/img3.jpg" />
+                            </a>
+                        </div>
+                        <div class=" pd-s-pro">
+                            <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="images/img3.jpg" title="">
+                                <img class="w-100" src="images/img3.jpg" />
+                            </a>
+                        </div>
+                        <div class=" pd-s-pro">
+                            <a class="thumb-pro-detail" data-zoom-id="Zoom-1" href="images/img3.jpg" title="">
+                                <img class="w-100" src="images/img3.jpg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+
         </div>
         <div class=" col-lg-7 right-pro-detail">
             <div class=" more-info-pro">
@@ -277,13 +316,16 @@
                             </div>
                         </li>
 
-                        <li class="mt-3 mg-20">
-                            <div class=" w-50 pd-20 ">
-                                <button class=" btn w-100 cart-add-btn cart-btn"> <i class="bi bi-cart-plus"></i> Add to
-                                    cart </button>
+                        <li class="mt-3 mg-10">
+                            <div class=" w-50 pd-10 ">
+                                <a href="cart_tpl.html" class=" text-uppercase btn cart-add-btn cart-btn w-100">
+                                    <i class="bi bi-cart-plus"></i> Add to cart
+                                </a>
                             </div>
-                            <div class=" w-50 pd-20 ">
-                                <button class=" btn w-100 cart-buy-btn cart-btn"> By now </button>
+                            <div class=" w-50 pd-10 ">
+                                <a href="checkout_tpl.html" class=" text-uppercase btn w-100 cart-buy-btn cart-btn">
+                                    By now
+                                </a>
                             </div>
                         </li>
                     </ul>
@@ -351,10 +393,10 @@
         </div>
     </div>
     <div class=" product-others">
-        
+
         <div class=" text-center">
             <p class=" title-main">other products</p>
-        
+
         </div>
         <div class="mg-20 row">
             <div class="pd-20 col-lg-4 col-md-4 col-sm-6 mg-b-20">
@@ -459,6 +501,8 @@
 <script type="text/javascript" src="aos/aos.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script type="text/javascript" src="magiczoom/magiczoomplus.js"></script>
+<script type="text/javascript" src="fancybox5/fancybox.umd.js"></script>
 <script type="text/javascript" src="slick/slick.js"></script>
 <script type="text/javascript" src="js.js"></script>
 <!-- Calling Slick Library -->
