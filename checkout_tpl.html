@@ -1,17 +1,420 @@
-<div class="box-payments">
-    <p class=" txt3"> payments </p>
-    <div class=" mb-3 d-flex align-items-center pay-box">
-        <div class=" form-check m-1 ms-0">
-            <input type="radio" name="" id="" required>
-            <label for=""> cod </label>
-        </div>
-        <div class=" form-check m-1 ms-0">
-            <input type="radio" name="" id="" required>
-            <label for=""> banking </label>
-        </div>
-        <div class=" form-check m-1 ms-0">
-            <input type="radio" name="" id="" required>
-            <label for=""> e-wallet </label>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>cart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="aos/aos.css">
+    <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<div class=" big-menu">
+    <div class="menu-bar menu-page-in ">
+        <div class=" menu-content">
+            <div class=" d-flex justify-content-between align-items-center">
+                <div class=" logo-menu">
+                    <a href="index.html" class=" menu-text"> DE-BA </a>
+                </div>
+                <div class=" menu-center">
+                    <ul class="mb-0 d-flex justify-content-center align-items-center list-unstyled">
+                        <li class="">
+                            <a href="index.html" class=" menu_parent">HOME</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class=" menu_parent">COLLECTION</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class=" menu_parent">GALLERY</a>
+                        </li>
+                        <li class="">
+                            <a href="#" class=" menu_parent ">
+                                PAGES
+                            </a>
+                            <div class="menu-child">
+                                <div class="mega-content">
+                                    <div class="list-menu-content">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <a href="#" class=" menu_list_child">GALLERY</a>
+                                                <div class="list-group">
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <a href="#" class=" menu_list_child">GALLERY</a>
+                                                <div class="list-group">
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <a href="#" class=" menu_list_child">GALLERY</a>
+                                                <div class="list-group">
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <a href="#" class=" menu_list_child">GALLERY</a>
+                                                <div class="list-group">
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class=" ">
+                            <a href="#" class=" menu_parent">Register</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class=" menu-right">
+                    <div class=" content-menu-right ">
+                        <ul class="mb-0 list-unstyled d-flex justify-content-end align-items-center">
+                            <li class="position-relative li-menu-cart">
+                                <a href="#" class="text-decoration-none  cart-menu-tab"><i class="bi bi-bag"></i>
+                                    <span>(0)</span></a>
+                                <div class=" cart-hid">
+                                    <div class=" content-cart-hid">
+                                        <a href="" class=" text-uppercase text-decoration-none"> go to cart <i
+                                                class="bi bi-arrow-right"></i> </a>
+                                        <p class="mb-0  total-cart-menu"> Total: <span class=" total-number">
+                                                &pound;0.00 </span> </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <p class="search"></p>
+                            </li>
+                            <li>
+                                <a class="d-inline-block" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                                    role="button" aria-controls="offcanvasExample">
+                                    <div class="menu_icon">
+                                        <span class="hamburger2 active">
+                                            <span class="top-bun"></span>
+                                            <span class="meat"></span>
+                                            <span class="bottom-bun"></span>
+                                        </span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas offcanvas-start menu-side-canvas" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <div class=" logo-menu text-center">
+                        <a href="" class=" menu-text"> DE-BA </a>
+                    </div>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class=" box-menu-side">
+                        <ul id="style-2" class=" list-unstyled menu_child ">
+                            <li class="">
+                                <a href="#" class=" menu_par_child">HOME</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class=" menu_par_child">COLLECTION</a>
+                            </li>
+                            <li class="">
+                                <a href="#" class=" menu_par_child">GALLERY</a>
+                            </li>
+                            <li>
+                                <div class="overlay-content">
+                                    <ul class="menu_child_side">
+                                        <li>
+                                            <a class="menu_par_child " href="" title=""> PAGES </a>
+                                            <span class="icon-level"> <i class="bi bi-chevron-down"></i> </span>
+                                            <ul class=" menu-child-list">
+                                                <li class=" ps-2">
+                                                    <a href="#" class="list-item">De-ba</a>
+                                                    <span class="icon-level"> <i class="bi bi-chevron-down"></i> </span>
+                                                    <ul class="menu-child-cat">
+                                                        <li class="ps-3">
+                                                            <a class=" text-capitalize " title="" href="">
+                                                                De-ba
+                                                            </a>
+                                                        </li>
+                                                        <li class="ps-3">
+                                                            <a class=" text-capitalize " title="" href="">
+                                                                De-ba
+                                                            </a>
+                                                        </li>
+                                                        <li class="ps-3">
+                                                            <a class=" text-capitalize " title="" href="">
+                                                                De-ba
+                                                            </a>
+                                                        </li>
+                                                        <li class="ps-3">
+                                                            <a class=" text-capitalize " title="" href="">
+                                                                De-ba
+                                                            </a>
+                                                        </li>
+                                                        <li class="ps-3">
+                                                            <a class=" text-capitalize " title="" href="">
+                                                                De-ba
+                                                            </a>
+                                                        </li>
+                                                        <li class="ps-3">
+                                                            <a class=" text-capitalize " title="" href="">
+                                                                De-ba
+                                                            </a>
+                                                        </li>
+                                                    </ul>
+                                                <li>
+                                                <li class=" ps-2"> <a href="#" class="list-item">De-ba</a>
+                                                <li>
+                                                <li class=" ps-2"> <a href="#" class="list-item">De-ba</a>
+                                                <li>
+                                                <li class=" ps-2"> <a href="#" class="list-item">De-ba</a>
+                                                <li>
+                                            </ul>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
+<div class="wrap-content py-4">
+    <p class=" txt3"> my cart </p>
+    <div class=" wrap-order">
+        <div class=" order-address">
+            <p class=" txt4"> <i class="bi bi-geo me-2"></i> Delivery Address </p>
+            <div class=" box-dlv-address">
+                <div class="row mg-20 ">
+                    <div class="col-md-4 pd-20">
+                        <div class=" name-phone-address">
+                            <p class=" txt5 mb-0"> my name (+84) 123456789 </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 pd-20">
+                        <div class=" info-location">
+                            <p class="mb-0">Nulla consequat massa quis enim. Pellentesque habitant morbi tristique
+                                senectus et netus et malesuada fames ac turpisegestas. Praesent egestas tristique nibh
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" col-md-2 pd-20">
+                        <div class=" change-locate">
+                            <a class=" text-decoration-none text-capitalize" href="#">
+                                <i class="bi bi-pencil-square me-2"></i> change
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" info-pro-buy">
+            <div class=" th-buy">
+                <div class=" row mg-20">
+                    <div class=" col-md-4 pd-20">
+                        <div class=" info-pro-buy-th">
+                            <p class=" txt6">Product </p>
+                        </div>
+                    </div>
+                    <div class=" col-md-2 pd-20">
+                        <div class=" type-buy-th">
+
+                        </div>
+                    </div>
+                    <div class="col-md-2 pd-20 ">
+                        <div class=" price-regular-buy-th">
+                            <p class=" txt6"> Price </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pd-20 ">
+                        <div class=" quan-buy-th">
+                            <p class=" txt6"> quantity </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pd-20 ">
+                        <div class=" total-price-buy-th">
+                            <p class=" txt6"> total Price </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" td-buy">
+                <div class=" row mg-b-20 mg-20">
+                    <div class=" col-md-4 pd-20">
+                        <div class=" info-pro-buy-td">
+                            <div class="avt-pro-buy">
+                                <a class=" text-decoration-none d-inline-block" href="#">
+                                    <img src="images/img5.png" alt="">
+                                </a>
+                            </div>
+                            <p class="mb-0 txt7">Product 1 </p>
+                        </div>
+                    </div>
+                    <div class=" col-md-2 pd-20">
+                        <div class=" type-buy-td">
+                            special: pink, M
+                        </div>
+                    </div>
+                    <div class="col-md-2 pd-20 ">
+                        <div class=" price-regular-buy-td">
+                            <p class="mb-0 txt7">
+                                <span>
+                                    &pound; 7.8
+                                </span>
+                                <span>
+                                    &pound; 5.6
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pd-20 ">
+                        <div class=" quan-buy-td">
+                            <p class="mb-0 txt7"> 2 </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pd-20 ">
+                        <div class=" total-price-buy-td">
+                            <p class="mb-0 txt7"> &pound; 11.2 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" row mg-b-20 mg-20">
+                    <div class=" col-md-4 pd-20">
+                        <div class=" info-pro-buy-td">
+                            <div class="avt-pro-buy">
+                                <a class=" text-decoration-none d-inline-block" href="#">
+                                    <img src="images/img4.jpg" alt="">
+                                </a>
+                            </div>
+                            <p class="mb-0 txt7">Product 1 </p>
+                        </div>
+                    </div>
+                    <div class=" col-md-2 pd-20">
+                        <div class=" type-buy-td">
+                            special: pink, M
+                        </div>
+                    </div>
+                    <div class="col-md-2 pd-20 ">
+                        <div class=" price-regular-buy-td">
+                            <p class="mb-0 txt7">
+                                <span>
+                                    &pound; 7.8
+                                </span>
+                                <span>
+                                    &pound; 5.6
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pd-20 ">
+                        <div class=" quan-buy-td">
+                            <p class="mb-0 txt7"> 2 </p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 pd-20 ">
+                        <div class=" total-price-buy-td">
+                            <p class="mb-0 txt7"> &pound; 11.2 </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="td-total text-end">
+                    <p class=" txt8 mb-0"> Total price (2 products): <span>&pound; 22.4</span> </p>
+                </div>
+                <div class=" td-pay-method">
+                    <div class="box-payments">
+                        <p class=" txt9 mb-0"> payments </p>
+                        <div class=" mb-3 d-flex align-items-center pay-box">
+                            <div class=" form-check m-1 ms-0">
+                                <input type="radio" name="" id="" required>
+                                <label for=""> cod </label>
+                            </div>
+                            <div class=" form-check m-1 ms-0">
+                                <input type="radio" name="" id="" required>
+                                <label for=""> banking </label>
+                            </div>
+                            <div class=" form-check m-1 ms-0">
+                                <input type="radio" name="" id="" required>
+                                <label for=""> e-wallet </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class=" total-bill d-flex flex-wrap align-items-center">
+                    <p class=" txt10 ">Total cost of products: </p> <p class=" txt11" >&pound; 22.4</p> 
+                    <p class=" txt10">Transport fee: </p> <p class=" txt11">&pound; 2</p> 
+                    <p class=" txt10">Total payment: </p>   <p class=" txt11">&pound; 24.4</p> 
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer-copyright">
+    <div class=" wrap-content">
+        <div class=" row align-items-center ">
+            <div class="col-lg-3 col-md-6 col-6 ft1">
+                <a href="#" class="name-com-ft d-inline-block text-uppercase"> deba </a>
+            </div>
+            <div class="col-lg-6 ft2">
+                <p class="copyright mb-0 text-center">
+                    ... © 2023. All Rights Reserved. With love by <a href="#" class=" text-uppercase"> name com
+                        powered </a>
+                </p>
+            </div>
+            <div class="col-lg-3 col-md-6 col-6 ft3">
+                <div class=" to-top text-end">
+                    <a href="#" class=" d-inline-block text-uppercase"> to top <i class="ms-2 bi bi-arrow-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="js.js"></script>
+<!-- Calling Slick Library -->
+
+</body>
+
+</html>
