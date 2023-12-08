@@ -66,6 +66,7 @@ a.list-item:hover {
     text-align: center;
     height: 45px;
     line-height: 45px;
+    cursor: pointer;
 }
 
 .btn-custome:hover {
@@ -218,6 +219,16 @@ a.list-item:hover {
     letter-spacing: 2px;
 }
 
+
+.content-menu-right>ul>li>a {
+    padding: 0 5px;
+}
+
+
+.menu_icon {
+    padding: 6px 0;
+}
+
 .menu-right a {
 
     font-family: 'Open Sans',
@@ -302,13 +313,13 @@ a.list-item:hover {
     top: 100px;
     width: 100%;
     left: 0;
-    opacity: 0;
     visibility: hidden;
     background: #fff;
     z-index: 99;
     box-shadow: #0000002e 0px 0px 15px;
     padding: 30px 0;
     transition: .4s;
+    opacity: 0;
 }
 
 .menu-bar a.menu-text,
@@ -367,9 +378,10 @@ a.list-item:hover {
 }
 
 .menu-center>ul>li:hover .menu-child {
-    opacity: 1;
     visibility: visible;
     top: 60px;
+    opacity: 1;
+    transition: .4s;
 }
 
 .fix_head .menu-bar {
@@ -554,6 +566,10 @@ a.menu_par_child,
 /* product */
 .wrap-product {
     padding-top: 80px;
+}
+
+.wrap-product .wrap-content {
+    max-width: 1366px;
 }
 
 .pd-20 {
@@ -1227,6 +1243,18 @@ a.menu_par_child,
     border: 1px solid #eee;
 }
 
+.name-pro-cart-info {
+    width: 50%;
+}
+
+.quantity-pro-cart-info {
+    width: 30%;
+}
+
+.price-pro-cart-info {
+    width: 20%;
+}
+
 .txt3 {
     font-size: 24px;
     font-weight: 500;
@@ -1331,27 +1359,34 @@ a.menu_par_child,
 
 .txt7 {
     width: 80%;
-    padding-left: 10px;
+    padding-left: 0;
     font-size: 13px;
     font-family: 'Open Sans';
 }
 
 .avt-pro-buy {
-    width: 20%;
+    width: 100px;
 }
 
-.total-bill.d-flex .txt10 {
+.txt10 {
     width: 60%;
+    color: #999;
+    margin-bottom: 8px;
 }
 
 .total-bill {
     margin-left: auto;
-    width: 25%;
+    width: 27%;
+    padding: 10px;
 }
 
-.total-bill.d-flex .txt11 {
+.txt11 {
     width: 40%;
     text-align: right;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
 }
 
 .txt4 {
@@ -1363,20 +1398,113 @@ a.menu_par_child,
     font-size: 15px;
     color: #999;
     text-transform: capitalize;
+    margin-bottom: 0;
 }
 
 .type-buy-td {
     font-size: 12px;
     font-family: 'Open Sans';
-    height: 100%;
-    display: flex;
-    align-items: center;
+    /* height: 100%; */
+    /* display: flex; */
+    /* align-items: center; */
+    width: 33%;
 }
 
 .price-regular-buy-td {
+    /* display: flex; */
+    /* align-items: center; */
+    /* height: 100%; */
+    width: 33%;
+}
+
+.change-locate a {
+    display: inline-block;
+    color: #333;
+    transition: .4s;
+}
+
+.change-locate a:hover {
+    color: #999;
+}
+
+.th-buy {
+    background: #f9f9f9;
+    padding: 5px;
+}
+
+.td-buy {
+    padding: 5px;
+}
+
+.txt8 {
+    font-size: 14px;
+    color: #999;
+    text-transform: capitalize;
+}
+
+.txt8 span {
+    font-weight: 600;
+    color: #333;
+    font-size: 16px;
+    padding-left: 10px;
+    font-family: 'Open Sans';
+}
+
+.td-pay-method {
+    border: 1px dashed #d5d5d5;
+    border-left: 0;
+    border-right: 0;
+    padding: 0 5px;
+}
+
+.td-total {
+    padding: 8px 0;
+    border-top: 1px dashed #d5d5d5;
+}
+
+.box-payments {
     display: flex;
     align-items: center;
-    height: 100%;
+    flex-wrap: wrap;
+}
+
+.txt9 {
+    text-transform: capitalize;
+    color: #999;
+}
+
+.pay-box label {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.outside-total-bill {
+    border-bottom: 1px dashed #d5d5d5;
+    margin-bottom: 10px;
+}
+
+.box-pro-right-check {
+    width: calc(100% - 100px);
+}
+
+.box2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 55%;
+}
+
+.box1 {
+    width: 28%;
+}
+
+.quan-buy-td {
+    width: 33%;
+}
+
+.box3 {
+    width: 17%;
 }
 
 /* end check out */
@@ -1438,8 +1566,9 @@ a.menu_par_child,
         margin: 20px 0;
     }
 
-
-
+    .total-bill {
+        width: 50%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1457,6 +1586,7 @@ a.menu_par_child,
 
     .menu-center {
         width: 110px;
+        display: none;
         order: 1;
     }
 
@@ -1482,9 +1612,44 @@ a.menu_par_child,
         text-align: center !important;
     }
 
+    .left-pro-detail {
+        margin-bottom: 20px;
+    }
+
+    .product-others .pic-pro img {
+        height: 180px;
+    }
+
+    .product-others .name-product {
+        font-size: 18px;
+    }
+
+    .th-cart {
+        display: none;
+    }
+
+    .name-pro-cart-info {
+        width: 100%;
+        margin-bottom: 5px;
+        order: 1;
+    }
+
+    .quantity-pro-cart-info {
+        width: 120px;
+        order: 3;
+    }
+
+    .price-pro-cart-info {
+        width: 100%;
+        order: 2;
+        margin-bottom: 5px;
+    }
 }
 
 @media (max-width: 576px) {
+    .th-buy {
+        display: none;
+    }
 
     .banner-image {
         height: 300px;
@@ -1513,6 +1678,7 @@ a.menu_par_child,
 
     .mg-20 {
         margin: 0 -5px;
+        margin-bottom: 5px;
     }
 
     .info-blog-right {
@@ -1523,6 +1689,73 @@ a.menu_par_child,
 
     .date {
         display: none;
+    }
+
+    .price-pro-cart-info .pre-cart {
+        text-align: left;
+    }
+
+    .txt5 {
+        text-align: left;
+    }
+
+    .info-location p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .info-location {
+        padding: 5px 0;
+        border: 1px dashed #d5d5d5;
+        border-left: 0;
+        border-right: 0;
+    }
+
+    .order-address {
+        margin-bottom: 20px;
+    }
+
+    .price-regular-buy-td {
+        display: none;
+    }
+
+    .total-bill {
+        width: 75%;
+    }
+
+    .txt10,
+    .txt9 {
+        font-size: 14px;
+    }
+
+    .box1 {
+        width: 100%;
+    }
+
+    .box2 {
+        width: 75%;
+        padding-right: 5px;
+    }
+
+    .box3 {
+        width: 25%;
+    }
+
+    .info-pro-buy-td {
+        flex-wrap: wrap;
+    }
+
+    .type-buy-td {
+        width: 80%;
+    }
+
+    .quan-buy-td {
+        width: 20%;
+    }
+
+    .txt4 {
+        font-size: 16px;
+        margin-bottom: 5px;
     }
 }
 
@@ -1578,4 +1811,10 @@ a.menu_par_child,
     .banner-image {
         height: 250px;
     }
+
+    .menu-bar a.menu-text,
+    .menu-page-in.menu-bar a.menu-text {
+        font-size: 22px;
+    }
+
 }

@@ -25,6 +25,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
+    
 <div class=" big-menu">
     <div class="menu-bar menu-page-in ">
         <div class=" menu-content">
@@ -493,6 +495,8 @@
         </div>
     </div>
 </div>
+</body>
+
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
@@ -517,6 +521,19 @@
     $('.item-spe').on("click", function () {
         let $act = $(this).toggleClass('active');
         $('.item-spe').not($act).removeClass('active');
+    });
+    /* Menu fixed */
+    $(window).scroll(function () {
+        var cach_top = $(window).scrollTop();
+        var heaigt_header = $(".big-menu").height();
+
+        if (cach_top >= heaigt_header) {
+            if (!$(".big-menu").hasClass("fix_head")) {
+                $(".big-menu").addClass("fix_head");
+            }
+        } else {
+            $(".big-menu").removeClass("fix_head");
+        }
     });
 
 </script>

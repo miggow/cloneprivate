@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="the-grid/the-grid.min.css">
+    <link rel="stylesheet" href="ionicons.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -1061,13 +1062,13 @@
                                                 </h3>
                                             </div><i class="tg-icon-share tg-element-2 share-btn"></i><a
                                                 class="tg-social-share tg-facebook tg-element-3"
-                                                href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Ftrendy%2F&#038;t=Trendy"><i
+                                                href=""><i
                                                     class="tg-icon-facebook"></i></a><a
                                                 class="tg-social-share tg-twitter tg-element-4"
-                                                href="https://twitter.com/share?url=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Ftrendy%2F&#038;text=Trendy"><i
+                                                href=""><i
                                                     class="tg-icon-twitter"></i></a><a
                                                 class="tg-social-share tg-pinterest tg-element-5"
-                                                href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Ftrendy%2F&#038;description=Trendy&#038;media=https%3A%2F%2Fwiso.foxthemes.me%2Fwp-content%2Fuploads%2F2018%2F04%2Fjeremy-bishop-409039.jpg"><i
+                                                href=""><i
                                                     class="tg-icon-pinterest"></i></a>
                                         </div>
                                     </div>
@@ -1257,7 +1258,7 @@
                         <script type='text/javascript' id='the-grid-js-extra'>
                             /* <![CDATA[ */
                             var tg_global_var = {
-                                "url": "https:\/\/wiso.foxthemes.me\/wp-admin\/admin-ajax.php",
+                                // "url": "https:\/\/wiso.foxthemes.me\/wp-admin\/admin-ajax.php",
                                 "nonce": "6c3d6b3e61",
                                 "is_mobile": null,
                                 "mediaelement": "",
@@ -1413,6 +1414,23 @@
                             <div class=" box-name-pro">
                                 <h3>
                                     <a href="product_detail.html" class=" name-product "> product 4 </a>
+                                </h3>
+                                <p class=" mb-0 price-pro"> Price: <span class=" ms-2">&pound;7.00</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pd-20 item-pro-slick">
+                        <div class=" item-product">
+                            <div class=" pic-pro">
+                                <p class="mb-0">
+                                    <a href="product_detail.html" class=" hover_img">
+                                        <img src="images/img2.jpg" class="w-100 img-fit" alt="product hot">
+                                    </a>
+                                </p>
+                            </div>
+                            <div class=" box-name-pro">
+                                <h3>
+                                    <a href="product_detail.html" class=" name-product "> product 5 </a>
                                 </h3>
                                 <p class=" mb-0 price-pro"> Price: <span class=" ms-2">&pound;7.00</span> </p>
                             </div>
@@ -1597,6 +1615,20 @@
     <!-- Calling Slick Library -->
 
     <script>
+        /* Menu fixed */
+            $(window).scroll(function () {
+                var cach_top = $(window).scrollTop();
+                var heaigt_header = $(".big-menu").height();
+
+                if (cach_top >= heaigt_header) {
+                    if (!$(".big-menu").hasClass("fix_head")) {
+                        $(".big-menu").addClass("fix_head");
+                    }
+                } else {
+                    $(".big-menu").removeClass("fix_head");
+                }
+            });
+            
         $("#carousel-slider").slick({
             arrows: false,
             infinite: true,
