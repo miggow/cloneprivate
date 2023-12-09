@@ -47,7 +47,7 @@
                                     <div class="mega-content">
                                         <div class="list-menu-content">
                                             <div class="row">
-                                                <div class="col-lg-3">
+                                                <div class="col-3">
                                                     <a href="#" class=" menu_list_child">GALLERY</a>
                                                     <div class="list-group">
                                                         <a href="#" class="list-item">De-ba</a>
@@ -57,7 +57,7 @@
                                                         <a href="#" class="list-item">De-ba</a>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-3">
+                                                <div class="col-3">
                                                     <a href="#" class=" menu_list_child">GALLERY</a>
                                                     <div class="list-group">
                                                         <a href="#" class="list-item">De-ba</a>
@@ -67,7 +67,7 @@
                                                         <a href="#" class="list-item">De-ba</a>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-3">
+                                                <div class="col-3">
                                                     <a href="#" class=" menu_list_child">GALLERY</a>
                                                     <div class="list-group">
                                                         <a href="#" class="list-item">De-ba</a>
@@ -77,7 +77,7 @@
                                                         <a href="#" class="list-item">De-ba</a>
                                                     </div>
                                                 </div>
-                                                <div class="col-lg-3">
+                                                <div class="col-3">
                                                     <a href="#" class=" menu_list_child">GALLERY</a>
                                                     <div class="list-group">
                                                         <a href="#" class="list-item">De-ba</a>
@@ -433,7 +433,14 @@
     crossorigin="anonymous"></script>
 <script type="text/javascript" src="js.js"></script>
 <!-- Calling Slick Library -->
+<script>
+      $("body").on("click", ".icon-level", function () {
+            $this = $(this);
+            $this.parent().addClass('active');
+            $this.parent().find("ul:first").slideToggle();
+        });
 
+</script>
 </body>
 
 </html>
