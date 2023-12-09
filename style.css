@@ -127,7 +127,7 @@ a.list-item:hover {
 }
 
 /* Gallery */
-
+/*
 .gallery {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -152,8 +152,12 @@ a.list-item:hover {
 
 .blog-card {
     max-width: 20rem;
-    /* Adjust the width as needed */
+    Adjust the width as needed
 }
+*/
+/* ---- grid ---- */
+
+.grid {}
 
 .blog-image img {
     width: 100%;
@@ -333,10 +337,10 @@ a.list-item:hover {
     color: #222222;
 }
 
-.menu-bar {
+.big-menu {
     position: relative;
     padding: 16px 15px;
-    width: calc(100% - 30px);
+    /* width: calc(100% - 30px); */
     margin: 0 auto;
     background: transparent;
     z-index: 10;
@@ -387,7 +391,7 @@ a.list-item:hover {
     transition: .4s;
 }
 
-.fix_head .menu-bar {
+.fix_head.big-menu {
     box-shadow: #00000024 0 5px 15px;
     background: #fff;
     /* padding: 5px 15px; */
@@ -638,9 +642,6 @@ a.menu_par_child,
 
 .grid {
     position: relative;
-    margin-top: 30px;
-    margin: 0 -15px;
-
 }
 
 /* clear fix */
@@ -654,13 +655,13 @@ a.menu_par_child,
 
 .grid-sizer,
 .grid-item {
-    width: 33%;
+    width: calc(100% / 3);
+    padding: 0 25px;
+    margin-bottom: 50px;
 }
 
 .grid-item {
     float: left;
-    padding: 0 15px;
-    margin-bottom: 30px;
 }
 
 .grid-item img {
@@ -1545,7 +1546,12 @@ a.menu_par_child,
         margin-bottom: 30px;
     }
 
-
+    .grid-sizer,
+    .grid-item {
+        width: calc(100% / 3);
+        padding: 0 5px;
+        margin-bottom: 10px;
+    }
 
     .pd-tb {
         padding: 50px 0;
@@ -1681,6 +1687,11 @@ a.menu_par_child,
 @media (max-width: 576px) {
     .th-buy {
         display: none;
+    }
+
+    .grid-sizer,
+    .grid-item {
+        width: calc(100% / 2);
     }
 
     .banner-image {

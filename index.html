@@ -8,7 +8,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-   
+
     <!-- <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" /> -->
     <link rel="stylesheet" href="aos/aos.css">
     <link rel="stylesheet" href="bootstrap-icons/font/bootstrap-icons.css">
@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="the-grid/the-grid.min.css">
-    <link rel="stylesheet" href="ionicons.min.css">
+    <link rel="stylesheet" href="masonry/lightgallery.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -208,8 +208,8 @@
                                         <span>(0)</span></a>
                                     <div class=" cart-hid">
                                         <div class=" content-cart-hid">
-                                            <a href="cart_tpl.html" class=" text-uppercase text-decoration-none"> go to cart <i
-                                                    class="bi bi-arrow-right"></i> </a>
+                                            <a href="cart_tpl.html" class=" text-uppercase text-decoration-none"> go to
+                                                cart <i class="bi bi-arrow-right"></i> </a>
                                             <p class="mb-0  total-cart-menu"> Total: <span class=" total-number">
                                                     &pound;0.00 </span> </p>
                                         </div>
@@ -455,897 +455,60 @@
     </div>
 
 
-    <div class="vc_row wpb_row vc_row-fluid  margin-lg-140b margin-md-110b pd-tb margin-sm-80b margin-xs-50b">
-        <div class="wpb_column vc_column_container vc_col-sm-12 ">
-            <div class="vc_column-inner ">
-                <div class="wpb_wrapper"><!-- The Grid Plugin Version 2.6.0 --><!-- The Grid Wrapper Start -->
-                    <div class="tg-grid-wrapper iso-portfolio-simple portfolio-grid  tg-txt full-height" id="grid-3190"
-                        data-version="2.6.0"><!-- The Grid Styles -->
-                        <style class="tg-grid-styles" type="text/css" scoped>
-                            #grid-3190 {
-                                margin-left: 30px;
-                                margin-right: 30px
-                            }
-
-                            #grid-3190 .tg-nav-color:not(.dots):not(.tg-dropdown-value):not(.tg-dropdown-title):hover,
-                            #grid-3190 .tg-nav-color:hover .tg-nav-color,
-                            #grid-3190 .tg-page-number.tg-page-current,
-                            #grid-3190 .tg-filter.tg-filter-active span {
-                                color: #ff6863
-                            }
-
-                            #grid-3190 .tg-filter:before,
-                            #grid-3190 .tg-filter.tg-filter-active:before {
-                                color: #999999
-                            }
-
-                            #grid-3190 .tg-dropdown-holder,
-                            #grid-3190 .tg-search-inner,
-                            #grid-3190 .tg-sorter-order {
-                                border: 1px solid #DDDDDD
-                            }
-
-                            #grid-3190 .tg-search-clear,
-                            #grid-3190 .tg-search-clear:hover {
-                                border: none;
-                                border-left: 1px solid #DDDDDD
-                            }
-
-                            .tg-txt .tg-nav-font,
-                            .tg-txt input[type=text].tg-search {
-                                font-size: 14px;
-                                font-weight: 600
-                            }
-
-                            .tg-txt .tg-search::-webkit-input-placeholder {
-                                font-size: 14px
-                            }
-
-                            .tg-txt .tg-search::-moz-placeholder {
-                                font-size: 14px
-                            }
-
-                            .tg-txt .tg-search:-ms-input-placeholder {
-                                font-size: 14px
-                            }
-
-                            .tg-txt .tg-icon-left-arrow:before {
-                                content: "\e604";
-                                font-size: 32px;
-                                font-weight: 100
-                            }
-
-                            .tg-txt .tg-icon-right-arrow:before {
-                                content: "\e602";
-                                font-size: 32px;
-                                font-weight: 100
-                            }
-
-                            .tg-txt .tg-icon-dropdown-open:before,
-                            .tg-txt .tg-icon-sorter-down:before {
-                                content: "\e60a"
-                            }
-
-                            .tg-txt .tg-icon-sorter-up:before {
-                                content: "\e609"
-                            }
-
-                            .tg-txt .tg-search-clear:before {
-                                content: "\e611";
-                                font-weight: 300
-                            }
-
-                            .tg-txt .tg-search-icon:before {
-                                content: "\e62e";
-                                font-size: 16px;
-                                font-weight: 600
-                            }
-
-                            #grid-3190 .tg-nav-color,
-                            #grid-3190 .tg-search-icon:hover:before,
-                            #grid-3190 .tg-search-icon:hover input,
-                            #grid-3190 .tg-disabled:hover .tg-icon-left-arrow,
-                            #grid-3190 .tg-disabled:hover .tg-icon-right-arrow,
-                            #grid-3190 .tg-dropdown-title.tg-nav-color:hover {
-                                color: #999999
-                            }
-
-                            #grid-3190 input.tg-search:hover {
-                                color: #999999 !important
-                            }
-
-                            #grid-3190 input.tg-search::-webkit-input-placeholder {
-                                color: #999999
-                            }
-
-                            #grid-3190 input.tg-search::-moz-placeholder {
-                                color: #999999;
-                                opacity: 1
-                            }
-
-                            #grid-3190 input.tg-search:-ms-input-placeholder {
-                                color: #999999
-                            }
-
-                            .grid-3190 .tg-dropdown-item {
-                                color: #777777;
-                                background: #ffffff
-                            }
-
-                            .grid-3190 .tg-filter-active,
-                            .grid-3190 .tg-dropdown-item:hover {
-                                color: #444444;
-                                background: #f5f6fa
-                            }
-
-                            #grid-3190 .tg-slider-bullets li.tg-active-item span {
-                                background: #59585b
-                            }
-
-                            #grid-3190 .tg-slider-bullets li span {
-                                background: #DDDDDD
-                            }
-
-                            .tg-iso-simple a:not([class*="tg-element-"]),
-                            .tg-iso-simple a:not([class*="tg-element-"]):active,
-                            .tg-iso-simple a:not([class*="tg-element-"]):focus,
-                            .tg-iso-simple [class*="tg-element-"] *:not(del) {
-                                margin: 0;
-                                padding: 0;
-                                color: inherit !important;
-                                text-align: inherit;
-                                font-size: inherit;
-                                font-style: inherit;
-                                line-height: inherit;
-                                font-weight: inherit;
-                                text-transform: inherit;
-                                text-decoration: inherit;
-                                -webkit-box-shadow: none;
-                                box-shadow: none;
-                                border: none
-                            }
-
-                            .tg-iso-simple [class*="tg-element-"],
-                            .tg-iso-simple .tg-item-overlay,
-                            .tg-iso-simple .tg-center-holder,
-                            .tg-iso-simple .tg-center-inner>* {
-                                vertical-align: middle
-                            }
-
-                            .tg-iso-simple .tg-item-overlay {
-                                background-color: rgba(0, 0, 0, 0.01) !important;
-                                position: absolute;
-                                display: block;
-                                top: 0;
-                                left: 0;
-                                bottom: 0;
-                                right: 0
-                            }
-
-                            .tg-iso-simple div.tg-item-media-content {
-                                opacity: 0;
-                                visibility: hidden;
-                                -webkit-transition: all 350ms ease;
-                                -moz-transition: all 350ms ease;
-                                -ms-transition: all 350ms ease;
-                                transition: all 350ms ease
-                            }
-
-                            .tg-iso-simple:hover .tg-item-media-content {
-                                opacity: 1;
-                                visibility: visible
-                            }
-
-                            .tg-iso-simple .tg-element-2 {
-                                position: absolute;
-                                font-size: 20px;
-                                line-height: 39px;
-                                color: #ffffff !important;
-                                font-weight: 400;
-                                text-align: center;
-                                border-color: #ffffff !important;
-                                display: block;
-                                bottom: 15px;
-                                right: 20px;
-                                z-index: 3;
-                                width: 40px;
-                                min-width: 40px;
-                                height: 40px;
-                                min-height: 40px;
-                                margin: 10px;
-                                border-width: 1px;
-                                border-style: solid;
-                                cursor: pointer
-                            }
-
-                            .tg-iso-simple .tg-element-3 {
-                                position: absolute;
-                                font-size: 14px;
-                                line-height: 32px;
-                                color: #ffffff !important;
-                                font-weight: 400;
-                                text-decoration: none;
-                                text-align: center;
-                                background-color: #3b5999;
-                                display: block;
-                                bottom: 80px;
-                                right: 20px;
-                                z-index: 3;
-                                width: 30px;
-                                min-width: 30px;
-                                height: 30px;
-                                min-height: 30px;
-                                -webkit-transition: all 150ms ease;
-                                -moz-transition: all 150ms ease;
-                                -ms-transition: all 150ms ease;
-                                transition: all 150ms ease
-                            }
-
-                            .tg-iso-simple .tg-element-3:hover {
-                                text-decoration: none;
-                                background-color: rgba(59, 89, 153, 0.8) !important;
-                                opacity: 1 !important
-                            }
-
-                            .tg-iso-simple .tg-element-4 {
-                                position: absolute;
-                                font-size: 14px;
-                                line-height: 32px;
-                                color: #ffffff !important;
-                                font-weight: 400;
-                                text-decoration: none;
-                                text-align: center;
-                                background-color: #dd4b39;
-                                display: block;
-                                bottom: 120px;
-                                right: 20px;
-                                z-index: 3;
-                                width: 30px;
-                                min-width: 30px;
-                                height: 30px;
-                                min-height: 30px;
-                                -webkit-transition: all 150ms ease;
-                                -moz-transition: all 150ms ease;
-                                -ms-transition: all 150ms ease;
-                                transition: all 150ms ease
-                            }
-
-                            .tg-iso-simple .tg-element-4:hover {
-                                text-decoration: none;
-                                background-color: rgba(221, 75, 57, 0.8);
-                                opacity: 1 !important
-                            }
-
-                            .tg-iso-simple .tg-element-5 {
-                                position: absolute;
-                                font-size: 14px;
-                                line-height: 32px;
-                                color: #ffffff !important;
-                                font-weight: 400;
-                                text-decoration: none;
-                                text-align: center;
-                                background-color: #bd081c;
-                                display: block;
-                                bottom: 160px;
-                                right: 20px;
-                                z-index: 3;
-                                width: 30px;
-                                min-width: 30px;
-                                height: 30px;
-                                min-height: 30px;
-                                -webkit-transition: all 150ms ease;
-                                -moz-transition: all 150ms ease;
-                                -ms-transition: all 150ms ease;
-                                transition: all 150ms ease
-                            }
-
-                            .tg-iso-simple .tg-element-5:hover {
-                                text-decoration: none;
-                                background-color: rgba(189, 8, 28, 0.8);
-                                opacity: 1 !important
-                            }
-
-                            .tg-iso-simple .tg-element-1 {
-                                position: relative;
-                                font-size: 15px;
-                                line-height: 20px;
-                                color: #ffffff !important;
-                                font-weight: 600;
-                                font-family: 'Open Sans';
-                                text-transform: uppercase;
-                                display: inline-block;
-                                margin: 0;
-                                padding: 0 50px 5px 0
-                            }
-
-                            /*.iso-portfolio-simple .tg-iso-simple .share-btn::before {
-                                content: "\f3ac";
-                                font-family: "Ionicons"
-                            }*/
-
-                            .iso-portfolio-simple .tg-iso-simple .tg-bottom-holder {
-                                padding: 25px 30px;
-                                display: flex;
-                                -webkit-box-align: center;
-                                -ms-flex-align: center;
-                                align-items: center;
-                                -webkit-box-pack: justify;
-                                -ms-flex-pack: justify;
-                                justify-content: space-between
-                            }
-
-                            .tg-iso-simple .tg-social-share:hover {
-                                background-color: transparent !important;
-                                opacity: 0.7 !important
-                            }
-
-                            .tg-iso-simple .tg-social-share {
-                                display: none;
-                                background-color: transparent !important;
-                                width: 60px;
-                                text-align: center;
-                                -webkit-transition: all 350ms ease;
-                                -moz-transition: all 350ms ease;
-                                -ms-transition: all 350ms ease;
-                                -o-transition: all 350ms ease;
-                                transition: all 350ms ease
-                            }
-
-                            .tg-item .tg-dark div,
-                            .tg-item .tg-dark h1,
-                            .tg-item .tg-dark h1 a,
-                            .tg-item .tg-dark h2,
-                            .tg-item .tg-dark h2 a,
-                            .tg-item .tg-dark h3,
-                            .tg-item .tg-dark h3 a,
-                            .tg-item .tg-dark h4,
-                            .tg-item .tg-dark h4 a,
-                            .tg-item .tg-dark h5,
-                            .tg-item .tg-dark h5 a,
-                            .tg-item .tg-dark h6,
-                            .tg-item .tg-dark h6 a,
-                            .tg-item .tg-dark a,
-                            .tg-item .tg-dark a.tg-link-url,
-                            .tg-item .tg-dark i,
-                            .tg-item .tg-dark .tg-media-button,
-                            .tg-item .tg-dark .tg-item-price span {
-                                color: #444444;
-                                fill: #444444;
-                                stroke: #444444;
-                                border-color: #444444
-                            }
-
-                            .tg-item .tg-dark p,
-                            .tg-item .tg-dark ol,
-                            .tg-item .tg-dark ul,
-                            .tg-item .tg-dark li {
-                                color: #777777;
-                                fill: #777777;
-                                stroke: #777777;
-                                border-color: #777777
-                            }
-
-                            .tg-item .tg-dark span,
-                            .tg-item .tg-dark .no-liked .to-heart-icon path,
-                            .tg-item .tg-dark .empty-heart .to-heart-icon path,
-                            .tg-item .tg-dark .tg-item-comment i,
-                            .tg-item .tg-dark .tg-item-price del span {
-                                color: #999999;
-                                fill: #999999;
-                                stroke: #999999;
-                                border-color: #999999
-                            }
-
-                            .tg-item .tg-light div,
-                            .tg-item .tg-light h1,
-                            .tg-item .tg-light h1 a,
-                            .tg-item .tg-light h2,
-                            .tg-item .tg-light h2 a,
-                            .tg-item .tg-light h3,
-                            .tg-item .tg-light h3 a,
-                            .tg-item .tg-light h4,
-                            .tg-item .tg-light h4 a,
-                            .tg-item .tg-light h5,
-                            .tg-item .tg-light h5 a,
-                            .tg-item .tg-light h6,
-                            .tg-item .tg-light h6 a,
-                            .tg-item .tg-light a,
-                            .tg-item .tg-light a.tg-link-url,
-                            .tg-item .tg-light i,
-                            .tg-item .tg-light .tg-media-button,
-                            .tg-item .tg-light .tg-item-price span {
-                                color: #ffffff;
-                                fill: #ffffff;
-                                stroke: #ffffff;
-                                border-color: #ffffff
-                            }
-
-                            .tg-item .tg-light p,
-                            .tg-item .tg-light ol,
-                            .tg-item .tg-light ul,
-                            .tg-item .tg-light li {
-                                color: #f6f6f6;
-                                fill: #f6f6f6;
-                                stroke: #f6f6f6;
-                                border-color: #f6f6f6
-                            }
-
-                            .tg-item .tg-light span,
-                            .tg-item .tg-light .no-liked .to-heart-icon path,
-                            .tg-item .tg-light .empty-heart .to-heart-icon path,
-                            .tg-item .tg-light .tg-item-comment i,
-                            .tg-item .tg-light .tg-item-price del span {
-                                color: #f5f5f5;
-                                fill: #f5f5f5;
-                                stroke: #f5f5f5;
-                                border-color: #f5f5f5
-                            }
-
-                            #grid-3190 .tg-item-content-holder {
-                                background-color: #ffffff
-                            }
-
-                            #grid-3190 .tg-item-overlay {
-                                background-color: rgba(22, 22, 22, 0.65)
-                            }
-
-                            @media only screen and (max-width:768px) {
-                                .iso-portfolio-simple .tg-iso-simple .tg-bottom-holder {
-                                    padding: 15px
-                                }
-
-                                .iso-portfolio-simple {
-                                    margin-right: 15px !important;
-                                    margin-left: 15px !important
-                                }
-                            }
-                        </style><!-- The Grid Item Sizer -->
-                        <style id='the-grid-inline-css' type='text/css'>
-                            .tolb-holder {
-                                background: rgba(0, 0, 0, 0.8)
-                            }
-
-                            .tolb-holder .tolb-close,
-                            .tolb-holder .tolb-title,
-                            .tolb-holder .tolb-counter,
-                            .tolb-holder .tolb-next i,
-                            .tolb-holder .tolb-prev i {
-                                color: #ffffff
-                            }
-
-                            .tolb-holder .tolb-load {
-                                border-color: rgba(255, 255, 255, 0.2);
-                                border-left: 3px solid #ffffff
-                            }
-
-                            .to-heart-icon,
-                            .to-heart-icon svg,
-                            .to-post-like,
-                            .to-post-like .to-like-count {
-                                position: relative;
-                                display: inline-block
-                            }
-
-                            .to-post-like {
-                                width: auto;
-                                cursor: pointer;
-                                font-weight: 400
-                            }
-
-                            .to-heart-icon {
-                                float: left;
-                                margin: 0 4px 0 0
-                            }
-
-                            .to-heart-icon svg {
-                                overflow: visible;
-                                width: 15px;
-                                height: 14px
-                            }
-
-                            .to-heart-icon g {
-                                -webkit-transform: scale(1);
-                                transform: scale(1)
-                            }
-
-                            .to-heart-icon path {
-                                -webkit-transform: scale(1);
-                                transform: scale(1);
-                                transition: fill .4s ease, stroke .4s ease
-                            }
-
-                            .no-liked .to-heart-icon path {
-                                fill: #999;
-                                stroke: #999
-                            }
-
-                            .empty-heart .to-heart-icon path {
-                                fill: transparent !important;
-                                stroke: #999
-                            }
-
-                            .liked .to-heart-icon path,
-                            .to-heart-icon svg:hover path {
-                                fill: #ff6863 !important;
-                                stroke: #ff6863 !important
-                            }
-
-                            @keyframes heartBeat {
-                                0% {
-                                    transform: scale(1)
-                                }
-
-                                20% {
-                                    transform: scale(.8)
-                                }
-
-                                30% {
-                                    transform: scale(.95)
-                                }
-
-                                45% {
-                                    transform: scale(.75)
-                                }
-
-                                50% {
-                                    transform: scale(.85)
-                                }
-
-                                100% {
-                                    transform: scale(.9)
-                                }
-                            }
-
-                            @-webkit-keyframes heartBeat {
-
-                                0%,
-                                100%,
-                                50% {
-                                    -webkit-transform: scale(1)
-                                }
-
-                                20% {
-                                    -webkit-transform: scale(.8)
-                                }
-
-                                30% {
-                                    -webkit-transform: scale(.95)
-                                }
-
-                                45% {
-                                    -webkit-transform: scale(.75)
-                                }
-                            }
-
-                            .heart-pulse g {
-                                -webkit-animation-name: heartBeat;
-                                animation-name: heartBeat;
-                                -webkit-animation-duration: 1s;
-                                animation-duration: 1s;
-                                -webkit-animation-iteration-count: infinite;
-                                animation-iteration-count: infinite;
-                                -webkit-transform-origin: 50% 50%;
-                                transform-origin: 50% 50%
-                            }
-
-                            .to-post-like a {
-                                color: inherit !important;
-                                fill: inherit !important;
-                                stroke: inherit !important
-                            }
-                        </style>
-                        <div class="tg-grid-sizer"></div><!-- The Grid Gutter Sizer -->
-                        <div class="tg-gutter-sizer"></div><!-- The Grid Items Holder -->
-                        <div class="tg-grid-holder tg-layout-grid" data-name="Wiso Portfolio Simple" data-style="grid"
-                            data-row="1" data-layout="vertical" data-rtl="" data-fitrows="" data-filtercomb=""
-                            data-filterlogic="AND" data-filterload="" data-sortbyload="" data-orderload="false"
-                            data-fullwidth="1" data-fullheight="null"
-                            data-gutters="[[320,15],[480,15],[768,15],[980,30],[1200,30],[9999,50]]"
-                            data-slider='{"itemNav":"null","swingSpeed":0.1,"cycleBy":"null","cycle":5000,"startAt":1}'
-                            data-ratio="1.00" data-cols="[[320,1],[480,2],[768,3],[980,3],[1200,4],[9999,4]]"
-                            data-rows="[[320,200],[480,200],[768,220],[980,220],[1200,240],[9999,240]]"
-                            data-animation='{&quot;name&quot;:&quot;Fade in&quot;,&quot;visible&quot;:&quot;&quot;,&quot;hidden&quot;:&quot;&quot;}'
-                            data-transition="700ms" data-ajaxmethod="load_more" data-ajaxdelay="100" data-preloader=""
-                            data-itemdelay="100" data-gallery="" data-ajax=""><!-- The Grid item #1 -->
-                            <article class="tg-item tg-post-3173 tg-iso-simple f26 f45" data-row="1" data-col="1">
-                                <div class="tg-item-inner">
-                                    <div class="tg-item-media-holder tg-light">
-                                        <div class="tg-item-media-inner">
-                                            <div class="tg-item-image" style="background-image: url(images/img3.jpg)">
-                                            </div>
-                                        </div>
-                                        <div class="tg-item-media-content ">
-                                            <div class="tg-item-overlay"></div>
-                                            <div class="tg-bottom-holder">
-                                                <h3 class="tg-item-title tg-element-1"><a target="_self"
-                                                        href="https://wiso.foxthemes.me/portfolio-item/trendy/">Trendy</a>
-                                                </h3>
-                                            </div><i class="bi bi-share-fill tg-element-2 share-btn"></i><a
-                                                class="tg-social-share tg-facebook tg-element-3"
-                                                href=""><i
-                                                    class="tg-icon-facebook"></i></a><a
-                                                class="tg-social-share tg-twitter tg-element-4"
-                                                href=""><i
-                                                    class="tg-icon-twitter"></i></a><a
-                                                class="tg-social-share tg-pinterest tg-element-5"
-                                                href=""><i
-                                                    class="tg-icon-pinterest"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article><!-- The Grid item #2 -->
-                            <article class="tg-item tg-post-3175 tg-iso-simple f26 f46 f41" data-row="1" data-col="2">
-                                <div class="tg-item-inner">
-                                    <div class="tg-item-media-holder tg-light">
-                                        <div class="tg-item-media-inner">
-                                            <div class="tg-item-image"
-                                                style="background-image: url(https://wiso.foxthemes.me/wp-content/uploads/2018/04/jakob-owens-190795.jpg)">
-                                            </div>
-                                        </div>
-                                        <div class="tg-item-media-content ">
-                                            <div class="tg-item-overlay"></div>
-                                            <div class="tg-bottom-holder">
-                                                <h3 class="tg-item-title tg-element-1"><a target="_self"
-                                                        href="https://wiso.foxthemes.me/portfolio-item/nature/">Nature</a>
-                                                </h3>
-                                            </div><i class="bi bi-share-fill tg-element-2 share-btn"></i><a
-                                                class="tg-social-share tg-facebook tg-element-3"
-                                                href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Fnature%2F&#038;t=Nature"><i
-                                                    class="tg-icon-facebook"></i></a><a
-                                                class="tg-social-share tg-twitter tg-element-4"
-                                                href="https://twitter.com/share?url=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Fnature%2F&#038;text=Nature"><i
-                                                    class="tg-icon-twitter"></i></a><a
-                                                class="tg-social-share tg-pinterest tg-element-5"
-                                                href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Fnature%2F&#038;description=Nature&#038;media=https%3A%2F%2Fwiso.foxthemes.me%2Fwp-content%2Fuploads%2F2018%2F04%2Fjakob-owens-190795.jpg"><i
-                                                    class="tg-icon-pinterest"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article><!-- The Grid item #3 -->
-                            <article class="tg-item tg-post-3177 tg-iso-simple f26" data-row="1" data-col="1">
-                                <div class="tg-item-inner">
-                                    <div class="tg-item-media-holder tg-light">
-                                        <div class="tg-item-media-inner">
-                                            <div class="tg-item-image"
-                                                style="background-image: url(https://wiso.foxthemes.me/wp-content/uploads/2018/04/jordan-mixson-372459.jpg)">
-                                            </div>
-                                        </div>
-                                        <div class="tg-item-media-content ">
-                                            <div class="tg-item-overlay"></div>
-                                            <div class="tg-bottom-holder">
-                                                <h3 class="tg-item-title tg-element-1"><a target="_self"
-                                                        href="https://wiso.foxthemes.me/portfolio-item/music/">Music</a>
-                                                </h3>
-                                            </div><i class="bi bi-share-fill tg-element-2 share-btn"></i><a
-                                                class="tg-social-share tg-facebook tg-element-3"
-                                                href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Fmusic%2F&#038;t=Music"><i
-                                                    class="tg-icon-facebook"></i></a><a
-                                                class="tg-social-share tg-twitter tg-element-4"
-                                                href="https://twitter.com/share?url=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Fmusic%2F&#038;text=Music"><i
-                                                    class="tg-icon-twitter"></i></a><a
-                                                class="tg-social-share tg-pinterest tg-element-5"
-                                                href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Fmusic%2F&#038;description=Music&#038;media=https%3A%2F%2Fwiso.foxthemes.me%2Fwp-content%2Fuploads%2F2018%2F04%2Fjordan-mixson-372459.jpg"><i
-                                                    class="tg-icon-pinterest"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article><!-- The Grid item #4 -->
-                            <article class="tg-item tg-post-3179 tg-iso-simple f26 f41" data-row="2" data-col="2">
-                                <div class="tg-item-inner">
-                                    <div class="tg-item-media-holder tg-light">
-                                        <div class="tg-item-media-inner">
-                                            <div class="tg-item-image"
-                                                style="background-image: url(https://wiso.foxthemes.me/wp-content/uploads/2018/04/sam-burriss-435641-e1526906975869.jpg)">
-                                            </div>
-                                        </div>
-                                        <div class="tg-item-media-content ">
-                                            <div class="tg-item-overlay"></div>
-                                            <div class="tg-bottom-holder">
-                                                <h3 class="tg-item-title tg-element-1"><a target="_self"
-                                                        href="https://wiso.foxthemes.me/portfolio-item/yellow-mood/">Yellow
-                                                        mood</a></h3>
-                                            </div><i class="bi bi-share-fill tg-element-2 share-btn"></i><a
-                                                class="tg-social-share tg-facebook tg-element-3"
-                                                href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Fyellow-mood%2F&#038;t=Yellow%20mood"><i
-                                                    class="tg-icon-facebook"></i></a><a
-                                                class="tg-social-share tg-twitter tg-element-4"
-                                                href="https://twitter.com/share?url=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Fyellow-mood%2F&#038;text=Yellow%20mood"><i
-                                                    class="tg-icon-twitter"></i></a><a
-                                                class="tg-social-share tg-pinterest tg-element-5"
-                                                href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Fyellow-mood%2F&#038;description=Yellow%20mood&#038;media=https%3A%2F%2Fwiso.foxthemes.me%2Fwp-content%2Fuploads%2F2018%2F04%2Fsam-burriss-435641-e1526906975869.jpg"><i
-                                                    class="tg-icon-pinterest"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article><!-- The Grid item #5 -->
-                            <article class="tg-item tg-post-3181 tg-iso-simple f26 f54 f56 f57" data-row="1"
-                                data-col="1">
-                                <div class="tg-item-inner">
-                                    <div class="tg-item-media-holder tg-light">
-                                        <div class="tg-item-media-inner">
-                                            <div class="tg-item-image"
-                                                style="background-image: url(https://wiso.foxthemes.me/wp-content/uploads/2018/04/icons8-team-355985.jpg)">
-                                            </div>
-                                        </div>
-                                        <div class="tg-item-media-content ">
-                                            <div class="tg-item-overlay"></div>
-                                            <div class="tg-bottom-holder">
-                                                <h3 class="tg-item-title tg-element-1"><a target="_self"
-                                                        href="https://wiso.foxthemes.me/portfolio-item/dreams/">Dreams</a>
-                                                </h3>
-                                            </div><i class="bi bi-share-fill tg-element-2 share-btn"></i><a
-                                                class="tg-social-share tg-facebook tg-element-3"
-                                                href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Fdreams%2F&#038;t=Dreams"><i
-                                                    class="tg-icon-facebook"></i></a><a
-                                                class="tg-social-share tg-twitter tg-element-4"
-                                                href="https://twitter.com/share?url=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Fdreams%2F&#038;text=Dreams"><i
-                                                    class="tg-icon-twitter"></i></a><a
-                                                class="tg-social-share tg-pinterest tg-element-5"
-                                                href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Fdreams%2F&#038;description=Dreams&#038;media=https%3A%2F%2Fwiso.foxthemes.me%2Fwp-content%2Fuploads%2F2018%2F04%2Ficons8-team-355985.jpg"><i
-                                                    class="tg-icon-pinterest"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article><!-- The Grid item #6 -->
-                            <article class="tg-item tg-post-3183 tg-iso-simple f26 f46 f44" data-row="1" data-col="1">
-                                <div class="tg-item-inner">
-                                    <div class="tg-item-media-holder tg-light">
-                                        <div class="tg-item-media-inner">
-                                            <div class="tg-item-image"
-                                                style="background-image: url(https://wiso.foxthemes.me/wp-content/uploads/2018/04/annie-spratt-467871.jpg)">
-                                            </div>
-                                        </div>
-                                        <div class="tg-item-media-content ">
-                                            <div class="tg-item-overlay"></div>
-                                            <div class="tg-bottom-holder">
-                                                <h3 class="tg-item-title tg-element-1"><a target="_self"
-                                                        href="https://wiso.foxthemes.me/portfolio-item/feelings/">Feelings</a>
-                                                </h3>
-                                            </div><i class="bi bi-share-fill tg-element-2 share-btn"></i><a
-                                                class="tg-social-share tg-facebook tg-element-3"
-                                                href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Ffeelings%2F&#038;t=Feelings"><i
-                                                    class="tg-icon-facebook"></i></a><a
-                                                class="tg-social-share tg-twitter tg-element-4"
-                                                href="https://twitter.com/share?url=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Ffeelings%2F&#038;text=Feelings"><i
-                                                    class="tg-icon-twitter"></i></a><a
-                                                class="tg-social-share tg-pinterest tg-element-5"
-                                                href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fwiso.foxthemes.me%2Fportfolio-item%2Ffeelings%2F&#038;description=Feelings&#038;media=https%3A%2F%2Fwiso.foxthemes.me%2Fwp-content%2Fuploads%2F2018%2F04%2Fannie-spratt-467871.jpg"><i
-                                                    class="tg-icon-pinterest"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article><!-- The Grid item #7 -->
-                            <article class="tg-item tg-post-3185 tg-iso-simple f26" data-row="1" data-col="2">
-                                <div class="tg-item-inner">
-                                    <div class="tg-item-media-holder tg-light">
-                                        <div class="tg-item-media-inner">
-                                            <div class="tg-item-image"
-                                                style="background-image: url(https://wiso.foxthemes.me/wp-content/uploads/2018/04/jakob-owens-303060.jpg)">
-                                            </div>
-                                        </div>
-                                        <div class="tg-item-media-content ">
-                                            <div class="tg-item-overlay"></div>
-                                            <div class="tg-bottom-holder">
-                                                <h3 class="tg-item-title tg-element-1"><a target="_self"
-                                                        href="https://wiso.foxthemes.me/portfolio-item/ocean/">Ocean</a>
-                                                </h3>
-                                            </div><i class="bi bi-share-fill tg-element-2 share-btn"></i><a
-                                                class="tg-social-share tg-facebook tg-element-3"
-                                                href=""><i
-                                                    class=" bi bi-share-fill"></i></a><a
-                                                class="tg-social-share tg-twitter tg-element-4"
-                                                href=""><i class=" bi bi-share-fill"></i></a><a
-                                                class="tg-social-share tg-pinterest tg-element-5"
-                                                href=""><i class=" bi bi-share-fill"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                        </div>
-                        <script type="text/javascript">
-                            (function ($) {
-                                "use strict";
-                                $(' .iso-portfolio-simple').each(function () {
-                                    var portfolio = $(this);
-                                    portfolio.find('.tg-icon-share').on('click', function () {
-                                        portfolio.find('.tg-social-share').slideToggle(700);
-                                    });
-                                });
-                            })
-                        </script>
-                        <script type='text/javascript' id='the-grid-js-extra'>
-                            /* <![CDATA[ */
-                            var tg_global_var = {
-                                /* "url": "https:\/\/wiso.foxthemes.me\/wp-admin\/admin-ajax.php", */
-                                "nonce": "6c3d6b3e61",
-                                "is_mobile": null,
-                                "mediaelement": "",
-                                "mediaelement_ex": null,
-                                "lightbox_autoplay": "",
-                                "debounce": "",
-                                "meta_data": null,
-                                "main_query": {
-                                    "page": 0,
-                                    "pagename": "classic-landing",
-                                    "error": "",
-                                    "m": "",
-                                    "p": 0,
-                                    "post_parent": "",
-                                    "subpost": "",
-                                    "subpost_id": "",
-                                    "attachment": "",
-                                    "attachment_id": 0,
-                                    "name": "classic-landing",
-                                    "page_id": 0,
-                                    "second": "",
-                                    "minute": "",
-                                    "hour": "",
-                                    "day": 0,
-                                    "monthnum": 0,
-                                    "year": 0,
-                                    "w": 0,
-                                    "category_name": "",
-                                    "tag": "",
-                                    "cat": "",
-                                    "tag_id": "",
-                                    "author": "",
-                                    "author_name": "",
-                                    "feed": "",
-                                    "tb": "",
-                                    "paged": 0,
-                                    "meta_key": "",
-                                    "meta_value": "",
-                                    "preview": "",
-                                    "s": "",
-                                    "sentence": "",
-                                    "title": "",
-                                    "fields": "",
-                                    "menu_order": "",
-                                    "embed": "",
-                                    "category__in": [],
-                                    "category__not_in": [],
-                                    "category__and": [],
-                                    "post__in": [],
-                                    "post__not_in": [],
-                                    "post_name__in": [],
-                                    "tag__in": [],
-                                    "tag__not_in": [],
-                                    "tag__and": [],
-                                    "tag_slug__in": [],
-                                    "tag_slug__and": [],
-                                    "post_parent__in": [],
-                                    "post_parent__not_in": [],
-                                    "author__in": [],
-                                    "author__not_in": [],
-                                    "ignore_sticky_posts": false,
-                                    "suppress_filters": false,
-                                    "cache_results": true,
-                                    "update_post_term_cache": true,
-                                    "lazy_load_term_meta": true,
-                                    "update_post_meta_cache": true,
-                                    "post_type": "",
-                                    "posts_per_page": 10,
-                                    "nopaging": false,
-                                    "comments_per_page": "50",
-                                    "no_found_rows": false,
-                                    "order": "DESC"
-                                }
-                            };
-                            /* ]]> */
-                        </script>
-
-                    </div><!-- The Grid Wrapper End -->
+    <div class=" wrap-gl"  data-aos="fade-up"   data-aos-duration="500">
+        <div class=" overflow-hidden">
+            <div class="grid album-gallery">
+                <div class="grid-sizer"></div>
+                <div class="grid-item">
+                    <a class="album-image hover_img" href="" title="">
+                        <img class=" w-100" src="images/img1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a class="album-image hover_img" href="" title="">
+                        <img class=" w-100" src="images/img2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a class="album-image hover_img" href="" title="">
+                        <img class=" w-100" src="images/img4.jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a class="album-image hover_img" href="" title="">
+                        <img class=" w-100" src="images/img3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a class="album-image hover_img" href="" title="">
+                        <img class=" w-100" src="images/img1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a class="album-image hover_img" href="" title="">
+                        <img class=" w-100" src="images/img5.png" alt="">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a class="album-image hover_img" href="" title="">
+                        <img class=" w-100" src="images/img1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="grid-item">
+                    <a class="album-image hover_img" href="" title="">
+                        <img class=" w-100" src="images/img2.jpg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="wrap-product" data-aos="fade-up" data-aos-duration="1000">
+    <div class="wrap-product" data-aos="fade-up" data-aos-duration="500">
         <div class="wrap-content">
-            <div class=" text-center" data-aos="fade-up" data-aos-duration="1000">
+            <div class=" text-center" data-aos="fade-up" data-aos-duration="500">
                 <p class=" title-main"> product hot </p>
             </div>
-            <div class=" container-pro-hot" data-aos="fade-up" data-aos-duration="1000">
+            <div class=" container-pro-hot" data-aos="fade-up" data-aos-duration="500">
                 <div class="mg-20 slick-product">
                     <div class="pd-20 item-pro-slick">
                         <div class=" item-product">
@@ -1439,12 +602,12 @@
         </div>
     </div>
 
-    <div class="wrap-blog pd-tb" data-aos="fade-up" data-aos-duration="1000">
+    <div class="wrap-blog pd-tb">
         <!-- Blog Section -->
         <div class=" wrap-content">
             <div class="d-flex flex-wrap  justify-content-between  ">
                 <!-- Blog Updated -->
-                <div class="col-blog-left text-center" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-blog-left text-center">
                     <p class="title-main">Blog updated</p>
                     <p class=" desc-blog">With over 5 years of experience, numerous workshops and features in top
                         wedding publications.</p>
@@ -1455,7 +618,7 @@
                 </div>
 
                 <!-- Blog Entry 1 -->
-                <div class="col-blog-right" data-aos="fade-up" data-aos-duration="1000">
+                <div class="col-blog-right">
                     <div class="cont-item-blog">
                         <div class="slick-blog">
                             <div class=" item-blog-slick">
@@ -1608,24 +771,27 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript" src="masonry/lightgallery-all.js"></script>
+    <script type="text/javascript" src="masonry/masonry.pkgd.js"></script>
     <script type="text/javascript" src="the-grid/the-grid.min.js"></script>
-    <script type="text/javascript" src="js.js"></script>
     <!-- Calling Slick Library -->
 
     <script>
-        /* Menu fixed */
-            $(window).scroll(function () {
-                var cach_top = $(window).scrollTop();
-                var heaigt_header = $(".big-menu").height();
+AOS.init({});
 
-                if (cach_top >= heaigt_header) {
-                    if (!$(".big-menu").hasClass("fix_head")) {
-                        $(".big-menu").addClass("fix_head");
-                    }
-                } else {
-                    $(".big-menu").removeClass("fix_head");
+        /* Menu fixed */
+        $(window).scroll(function () {
+            var cach_top = $(window).scrollTop();
+            var heaigt_header = $(".big-menu").height();
+
+            if (cach_top >= heaigt_header) {
+                if (!$(".big-menu").hasClass("fix_head")) {
+                    $(".big-menu").addClass("fix_head");
                 }
-            });
+            } else {
+                $(".big-menu").removeClass("fix_head");
+            }
+        });
 
         $("#carousel-slider").slick({
             arrows: false,
@@ -1645,6 +811,8 @@
         });
 
     </script>
+    <script type="text/javascript" src="js.js"></script>
+
 </body>
 
 </html>
